@@ -16,6 +16,8 @@
     
     .menu Li {padding-right: 4rem;}
 
+}
+
 @media (max-width: 700px) {
     .menu {
         list-style-type: none;
@@ -36,9 +38,9 @@
         overflow:hidden;
     }
 
-}
 
-#burger-toggle:checked ~ .menu L1 {
+
+#burger-toggle:checked ~ .menu Li {
     height: 1rem;
     width: auto;
     padding-left: 0.5rem;
