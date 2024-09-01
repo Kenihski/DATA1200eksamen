@@ -1,0 +1,103 @@
+:root {
+    --siteblue: rgb(139, 185, 227);
+}
+
+/** Hamburgermeny start **/
+
+#burger-toggle {display: none;}
+
+@media (min-width:701px) {
+    .menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style-type: none;
+    }
+    
+    .menu Li {padding-right: 4rem;}
+
+}
+
+@media (max-width: 700px) {
+    .menu {
+        list-style-type: none;
+        position: sticky;
+        padding-left: 0px;
+    }
+
+    .menu-icon {
+        display: block;
+        background-image: url(../bilder/menu.svg.png);
+        background-size: cover;
+        height: 40px;
+        width: 40px;
+    }
+
+    .menu Li {
+        height: 0px;
+        overflow:hidden;
+    }
+
+
+
+#burger-toggle:checked ~ .menu Li {
+    height: 1rem;
+    width: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: var(--siteblue);
+}
+
+nav {
+    display: flex;
+    height: 40px;
+}
+
+}
+
+/**Hamburgermenu slutt**/
+
+body {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+    background-color: var(--siteblue);
+    line-height: 1.4rem;
+    font-size: 0.9rem;
+
+}
+
+
+
+article {
+    margin-left: 10%;
+    margin-right: 20%;
+}
+
+.column {
+    float: left;
+    width: 45%;
+    padding: 10px;
+    
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media screen and (max-width: 500px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size: 2.2rem;
+}
