@@ -2,7 +2,7 @@
     --siteblue: rgb(139, 185, 227);
 }
 
-/** Meny start **/
+/** Hamburgermeny start **/
 
 #burger-toggle {display: none;}
 
@@ -56,7 +56,7 @@ nav {
 
 }
 
-/**Menu slutt**/
+/**Hamburgermenu slutt**/
 
 body {
     margin: 0;
