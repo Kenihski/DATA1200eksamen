@@ -18,12 +18,13 @@ body {
 }
 
 article {
-    margin-left: 10%;
+    margin-left: 2%;
     margin-right:2%;
+    
 }
 
 aside {
-    margin-left:2%; 
+    margin-left:2%
 }
 
 .menu a{
@@ -98,13 +99,12 @@ nav {
 .hero-image {
     background-image: url("https://img.freepik.com/premium-photo/medical-technologist-pipetting-with-blood-samples-test-tubes-laboratory_34141-585.jpg");
     height: 90%;
- 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    margin-left: 2%;
-    margin-right: 2%;
+    
+    
     
 
   }
@@ -112,8 +112,8 @@ nav {
 .hero-text1 {
     text-align:center;
     position: absolute;
-    top: 75%;
-    left: 15%;
+    top: 60%;
+    left: 30%;
     transform: translate(-50%, -50%);
     color: rgb(9, 9, 9);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -207,6 +207,7 @@ nav {
         background-size: cover;
         height: 140vw;
         max-height: 300vw;
+        
     }
 
 
@@ -215,8 +216,25 @@ nav {
 @media(min-width:840px){
     .gridcontainer{
         display:grid;
-        grid-template-columns: minmax(500px, 40vw) minmax(300px, 20vw) auto;
+        grid-template-columns: minmax(500px, 40vw) minmax(300px, 20vw) minmax(300px, 20vw) auto;
         grid-auto-rows: minmax (100px, auto);
+        width: 50vw;
+        padding-left: 25vw;
+        
+        
+  
+    
+    
+        
+ 
+ 
+ /*
+        width: 50vw;
+        padding-left: 25vw;
+        padding-right: 25vw;
+    */
+        /* with og begge paddingene er jeg usikker på om skal være sånn. ser ikke helt bra ut slik iallfall*/
+       
        
        }
 
@@ -225,8 +243,8 @@ nav {
         grid-column: 1/4;
         grid-row: 1/2;
         background-size: cover;
-        height: 40vw;
-        max-height: 300vw;     
+        height: 25vw;
+        max-height: 50vw;     
     
        
        }
