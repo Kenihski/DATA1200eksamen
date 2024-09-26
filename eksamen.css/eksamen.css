@@ -218,8 +218,7 @@ nav {
         display:grid;
         grid-template-columns: minmax(500px, 40vw) minmax(300px, 20vw) minmax(300px, 20vw) auto;
         grid-auto-rows: minmax (100px, auto);
-        width: 50vw;
-        padding-left: 25vw;
+
         
         
   
