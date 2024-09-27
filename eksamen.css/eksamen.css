@@ -3,7 +3,7 @@
     --sitegrey: rgb(238, 239, 240);
 }
 
-
+/* Generell start*/
 
 header {
     background-color: var(--siteblue);
@@ -15,6 +15,7 @@ header {
 body {
     margin: 0;
     font-family: Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
 }
 
 article {
@@ -23,16 +24,13 @@ article {
     
 }
 
-aside {
-    margin-left:2%
-}
 
 .menu a{
     text-decoration: none;
 }
 
 
-
+/* Generell slutt*/
 
 
 
@@ -57,6 +55,7 @@ aside {
         list-style-type: none;
         position: sticky;
         padding-left: 0px;
+        z-index: 2;
     }
 
     .menu-icon {
@@ -92,10 +91,147 @@ nav {
 
 /**Hamburgermenu slutt**/
 
+/* flex-box-Activity start*/
+
+.main-activity {
+    font-family: Arial, sans-serif;
+    display: flex; 
+    justify-content: center; 
+    font-size: 1rem;           
+}
+
+.flex-container-activity {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    max-width: 1200px; 
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.flex-sub-container1-hero-activity{
+    position: relative;
+    flex: 2;
+    background: url("https://img.freepik.com/premium-photo/medical-technologist-pipetting-with-blood-samples-test-tubes-laboratory_34141-585.jpg") no-repeat center center/cover;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    min-height: 450px;
+    
+}
+
+.overskrift-activity {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    margin: 0;
+}
+
+.flex-sub-container2-activity {
+    display: flex;
+    flex: 2;
+}
+
+.flex-venstre-column-activity {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+.flex-box-activity {
+    flex: 1;
+    margin: 10px;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+.flex-høyre-column-activity {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
+.flex-høyre-column-activity.flex-box-activity {
+    flex: none;
+        
+}
+
+
+@media (max-width: 839px) {
+    .flex-container-activity {
+        padding: 5%;
+    }
+}
+
+@media (max-width: 839px) {
+    .flex-container-activity{
+        padding: 2%;
+    }
+
+    .flex-sub-container1-hero-activity{
+        min-height: 200px;
+    }
+
+    .flex-sub-container2-activity {
+        flex-direction: column;
+    }
+
+    .flex-venstre-column-activity, .flex-høyre-column-activity {
+        flex: none;
+        width: 100%;
+    }
+}
+
+@media (min-width: 840px) {
+    .flex-container-activity {
+        padding: 1%;
+    }
+}
+
+/* flex-box-Activity slutt*/
+
+/* Bilder Activity start */
+
+.asidebilderamme-activity{
+    background-color: var(--sitegrey);
+    border: 10px solid var(--sitegrey);
+    background-size: cover; 
+ }
+
+ .column-activity {
+    float: left;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-size: cover;
+}
+
+.row-activity {
+    clear: both;
+    display: table;   
+}
+
+@media screen and (max-width: 839px) {
+    .column-activity  {
+      width: 100%;
+    }
+}
+
+/* Bilder Activity slutt*/
+
+
+/*Gammelt kode som skal slettes under*/
+
 
 /** Manipulering av bilder start**/
 
-
+/*
 .hero-image {
     background-image: url("https://img.freepik.com/premium-photo/medical-technologist-pipetting-with-blood-samples-test-tubes-laboratory_34141-585.jpg");
     height: 90%;
@@ -139,7 +275,7 @@ nav {
 
 */ 
 
-
+/*
  .asidebilderamme{
     background-color: var(--sitegrey);
     border: 10px solid var(--sitegrey);
@@ -162,19 +298,25 @@ nav {
 .row {
     clear: both;
     display: table;
-    padding-bottom: 5%;
-    
+
+   
 }
 
 @media screen and (max-width: 839px) {
     .column {
       width: 100%;
     }
+}
+*/
+/*
+  @media screen and (max-width: 839px) {
+ 
     .hero-text1 {
         width: 0;
         font-size: 0;
     }
   }
+
 
   @media screen and (min-width:840px) {
     .hero-text2 {
@@ -182,12 +324,13 @@ nav {
         font-size: 0;
     }
   }
+*/
 
 /** Manipulering av bilder slutt**/
 
 /* Grid start*/
  
-
+/*
 @media(max-width: 839px){
     .hero-box{
         grid-column: 1/4;
@@ -220,7 +363,7 @@ nav {
         grid-auto-rows: minmax (100px, auto);
 
         
-        
+     }   
   
     
     
@@ -235,8 +378,8 @@ nav {
         /* with og begge paddingene er jeg usikker på om skal være sånn. ser ikke helt bra ut slik iallfall*/
        
        
-       }
-
+       
+/*
 
        .hero-box{
         grid-column: 1/4;
@@ -269,7 +412,7 @@ nav {
 
 
 }
-
+*/
 
 /* Grid slutt*/
 
