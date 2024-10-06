@@ -1,6 +1,7 @@
 :root {
     --siteblue: rgb(139, 185, 227);
     --sitegrey: rgb(238, 239, 240);
+    --oslometyellow: rgb(255,220,0);
 }
 
 /* Generell start*/
@@ -11,10 +12,13 @@
 
 header {
     background-color: var(--siteblue);
-    line-height: 2.2rem;
+    line-height: 0.5rem;
     font-size: 1rem;
+    padding: 0.5rem;
 
 }
+
+
 
 body {
     margin: 0;
@@ -22,6 +26,7 @@ body {
     box-sizing: border-box;
     font-size: 1rem;
 }
+
 
 
 .menu a{
@@ -78,8 +83,10 @@ body {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
     background-color: var(--siteblue);
 }
+
 
 nav {
     display: flex;
@@ -90,6 +97,8 @@ nav {
 
 /**Hamburgermenu slutt**/
 
+
+
 /* flex-box-Activity start*/
 
 .main-activity {
@@ -97,6 +106,7 @@ nav {
     justify-content: center; 
     flex-direction: column; 
     min-height: 100vh; 
+    padding-top: 10px;
 }   
 
 .flex-container-activity {
@@ -209,10 +219,9 @@ nav {
 }
 
 
-
-
-
 /* flex-box-Activity slutt*/
+
+
 
 /* Bilder Activity start */
 
