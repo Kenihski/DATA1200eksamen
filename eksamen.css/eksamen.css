@@ -18,7 +18,9 @@ header {
 
 }
 
-
+#index-header{
+    background-color: var(--oslometyellow);
+}
 
 body {
     margin: 0;
@@ -87,6 +89,9 @@ body {
     background-color: var(--siteblue);
 }
 
+#burger-toggle:checked ~ #menu-index Li{
+background-color: var(--oslometyellow);
+}
 
 nav {
     display: flex;
@@ -253,3 +258,162 @@ nav {
 /* Bilder Activity slutt*/
 
 
+
+
+/* flex-box-index start*/
+
+.main-index {
+    display: flex; 
+    justify-content: center; 
+    flex-direction: column; 
+    min-height: 100vh; 
+    padding-top: 10px;
+}   
+
+.flex-container-index {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    max-width: 1200px; 
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+    flex: 1;
+}
+
+.flex-sub-container1-hero-index{
+    position: relative;
+    flex: 2;
+    display: flex;
+    min-height: 450px;
+    
+}
+
+.video-index{
+    width: 100%;  
+}
+
+
+.flex-sub-container2-index {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+}
+
+.flex-venstre-column-index {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    margin-left: 15vw;
+    margin-right: 15vw;
+
+    
+}
+
+.flex-box-index {
+    flex: 1;
+    margin: 10px;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+
+
+.footer-index {
+    background-color: var(--oslometyellow);  
+    padding: 1.5em;
+}
+
+
+
+@media (max-width: 839px) {
+    .flex-container-index {
+        padding: 5%;
+    }
+}
+
+@media (max-width: 839px) {
+    .flex-container-index{
+        padding: 2%;
+    }
+
+    .flex-sub-container1-hero-index{
+        min-height: 200px;
+    }
+
+    .flex-sub-container2-index {
+        flex-direction: column;
+    }
+
+    .flex-venstre-column-index {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 840px) {
+    .flex-container-index {
+        padding: 1%;
+    }
+}
+
+@media (min-width: 900px) {
+    .flex-container-index{
+        flex:0;    
+    }
+    .flex-sub-container1-hero-index{
+         flex: 0;
+    }
+    .main-index{
+        justify-content: flex-start;
+    }
+}
+
+
+@media (min-width: 2400px){
+    .flex-venstre-column-index {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+}
+
+
+/* flex-box-index slutt*/
+
+/* Bilder index start */
+
+.flex-container-index-bilde-nede {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--oslometyellow);
+    align-items: center;
+    
+    
+}
+.flex-index-bilde-nede-innhold{
+    background-size:cover;
+    background-color: var(--oslometyellow);
+    flex: 1;
+    position: relative;        
+}
+
+.flex-index-bilde-nede-innhold img{
+    display: block; 
+}
+
+.flex-index-bilde-nede-innhold p,h2 {
+    margin: 20px;
+}
+
+
+@media (max-width: 839px) {
+    .flex-container-index-bilde-nede {
+        flex-direction: column;
+    }
+}
+
+
+/* Bilder index slutt */
