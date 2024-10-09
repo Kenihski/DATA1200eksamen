@@ -163,6 +163,10 @@ nav {
     
 }
 
+.flex-box-activity h2{
+    margin-left: 0;
+}
+
 .flex-høyre-column-activity {
     flex: 1;
     display: flex;
@@ -318,6 +322,10 @@ nav {
     
 }
 
+/*denne under trengs ikke etterhver kanskje. men lar stå for å få overskrifter uten margin i index*/
+.flex-box-index h2 {
+    margin-left: 0;
+}
 
 
 .footer-index {
