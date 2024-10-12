@@ -227,20 +227,36 @@ h1 {
 .undertittel-tekst {
 
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 23px
+    font-size: 23px;
+    flex-wrap: wrap;
 }
+
+
+ 
+
+
+
+
 
 
 
 .container{
+    min-height: 800px;
+    border: 8px solid black;
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center;
+    
      
 }
 
 
 .box{
-    width: 170px;
-    height: 120px;
-    font-size: 5em
+    width: 150px;
+    height: 150px;
+    font-size: 5em;
+    text-align: center;
+     
 
 
 
@@ -252,7 +268,7 @@ h1 {
     background-color: rgb(140, 165, 240);
 }
 #box3{
-    background-color: rgb(140, 240, 143);
+    background-color: rgb(140 , 240, 143);
 }
 #box4{
     background-color: rgb(240, 170, 140);
