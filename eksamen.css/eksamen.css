@@ -286,15 +286,24 @@ nav {
 }
 
 .flex-sub-container1-hero-index{
+/* fant inspo her https://stackoverflow.com/questions/70851848/remove-black-bars-on-both-left-right-sides-of-an-iframe-video */
     position: relative;
-    flex: 2;
-    display: flex;
-    min-height: 450px;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+    
     
 }
 
-.video-index{
-    width: 100%;  
+.flex-sub-container1-hero-index iframe{
+/* fant inspo her https://stackoverflow.com/questions/70851848/remove-black-bars-on-both-left-right-sides-of-an-iframe-video */   
+    width: 100%;
+    height: 100%;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 
@@ -346,9 +355,11 @@ nav {
         padding: 2%;
     }
 
+    /* kan trolig slettes
     .flex-sub-container1-hero-index{
         min-height: 200px;
     }
+    */
 
     .flex-sub-container2-index {
         flex-direction: column;
@@ -371,6 +382,8 @@ nav {
     .flex-container-index{
         flex:0;    
     }
+
+    
     .flex-sub-container1-hero-index{
          flex: 0;
     }
@@ -384,8 +397,17 @@ nav {
     .flex-venstre-column-index {
         margin-left: 5vw;
         margin-right: 5vw;
-    }
+    }   
 }
+
+@media (min-width: 6000px){
+    .flex-venstre-column-index {
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+
+}    
+
 
 
 /* flex-box-index slutt*/
