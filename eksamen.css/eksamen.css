@@ -306,6 +306,28 @@ nav {
     left: 0;
 }
 
+.flex-index-hovedoverskrift{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.6rem; 
+}
+
+.flex-index-teksts-oppe{
+    display: flex;
+    font-size: 1.2rem;
+    align-items: center;
+    justify-content: center;  
+}
+
+.flex-index-teksts-oppe p {   
+margin-top: 5%;
+margin-bottom: 5%;
+margin-left: 30%;
+margin-right: 30%  
+}
+
+
+
 
 .flex-sub-container2-index {
     display: flex;
