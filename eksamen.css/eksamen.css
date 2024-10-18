@@ -527,3 +527,125 @@ margin-right: 30%;
 
 
 /* Bilder index slutt */
+
+/* Hovedtabell index start*/
+
+.tabellramme {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-top: 3px solid var(--sitegrey);
+   
+}
+
+.knapp-box {
+    padding: 20px;
+    background-color: var(--oslometyellow);
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    margin-right: 10px;
+    background-image: url(../bilder/Plus_symbol.svg.png.svg)
+}
+
+
+
+#knapp-hovedtabell1:checked ~ .knapp-box {
+    background-image: url(../bilder/Minus_symbol.svg.png.svg);
+
+}
+
+.hovedtabell-overskrift-box{
+    padding: 20px;
+    flex: 3;
+}
+
+.hovedinnhold-i-gjeminnhold {
+    display: none;
+    padding: 20px;
+    color: black;
+    margin-top: 10px;
+}
+
+#knapp-hovedtabell1:checked ~ .hovedinnhold-i-gjeminnhold {
+    display: block;
+}
+
+#knapp-hovedtabell2:checked ~ .hovedinnhold-i-gjeminnhold {
+    display: block;
+}
+
+.gjemt-innhold {
+    display: none;
+}
+
+/* Hovedtabell index slutt*/
+
+/* Tabell med info om programmer start */
+
+.flere-interesser{
+    font-size: 1.8rem;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+#lenke-programmer1, #lenke-programmer2, #lenke-programmer3, #lenke-programmer4, 
+#lenke-programmer5, #lenke-programmer6, #lenke-programmer7, #lenke-programmer8{
+    text-decoration: none;
+}
+
+
+.ulike-programmer{
+    border-top: 2px solid var(--sitegrey);
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#ulike-programmer-siste-mlinje {
+    border-bottom: 2px solid var(--sitegrey);;
+}
+
+@media (max-width: 839px) {
+    .ulike-programmer, .flere-interesser{
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+
+}
+
+.ulike-programmer p{
+font-size: 1.1rem;
+cursor: pointer;
+margin-bottom: 5px;
+}
+
+.info-programmer {
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 20px;
+}
+
+.info-box {
+    flex: 1;
+    text-align:center;
+    flex-direction: row;
+    border-right: solid 1px rgb(7,7,7);
+    font-size: small;
+    white-space: nowrap;
+    padding-right: 10px; 
+    padding-left: 10px;
+    
+}
+
+.info-box:first-child{
+    padding-left: 0px;
+}
+
+.info-box:nth-child(4){
+    border-right:none;
+}
+
+/* Tabell med info om programmer slutt */
