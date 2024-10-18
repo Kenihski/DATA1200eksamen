@@ -33,6 +33,7 @@ body {
 
 .menu a{
     text-decoration: none;
+    color: #222;
 }
 
 
@@ -459,6 +460,7 @@ margin-right: 30%;
 
 #lenke-boks-studenthistorier{
     text-decoration: none;
+    color: #222;
 }
 
 @media (max-width: 839px) {
@@ -595,6 +597,7 @@ margin-right: 30%;
 #lenke-programmer1, #lenke-programmer2, #lenke-programmer3, #lenke-programmer4, 
 #lenke-programmer5, #lenke-programmer6, #lenke-programmer7, #lenke-programmer8{
     text-decoration: none;
+    color: #222;
 }
 
 
