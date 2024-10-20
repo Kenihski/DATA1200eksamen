@@ -244,43 +244,52 @@ h1 {
     min-height: 800px;
     border: 8px solid black;
     display: flex; 
-    justify-content: space-evenly;
+    gap: 20px;
+    justify-content: center;
     align-items: center;
+    align-content: center;
+    
+    
     
      
 }
 
 
 .box{
-    width: 150px;
-    height: 150px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+    width: 200px;
+    height: 200px;
     font-size: 5em;
-    text-align: center;
-     
-
-
 
 }
+
+
+
+
+
+
 #box1{
-    background-color: khaki;
+    background-color: rgb(48, 109, 232);
 }
 #box2{
-    background-color: rgb(140, 165, 240);
-}
+    background-color: rgb(48, 109, 232);
+} 
 #box3{
-    background-color: rgb(140 , 240, 143);
+    background-color: rgb(48, 109, 232);
 }
 #box4{
-    background-color: rgb(240, 170, 140);
+    background-color: rgb(48, 109, 232);
 }
 #box5{
-    background-color: rgb(235, 140, 240);
+    background-color: rgb(48, 109, 232);
 }
 #box6{
-    background-color: rgb(140, 240, 237);
+    background-color: rgb(48, 109, 232);
 }
 #box7{
-    background-color: rgb(240, 207, 140);
+    background-color: rgb(48, 109, 232);
 }
 
 
@@ -288,54 +297,6 @@ h1 {
 
 
 
-
-.boxx {
-    background-color: rgb(240, 217, 12);
-    width: 90%;
-    padding-bottom: 50px;
-    margin-bottom: 100px;
-    margin-top: 20%;
-    
-}
-
-.boxx a{
-    text-decoration: none;
-}
- 
-.boxx h2{
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 60px;
-    margin-left: 20px;
-
-}
-
-
-.boxx p{
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 20px;
-
-}
-
-
-
-.gridcontainer{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    background-color: #2196F3;
-    padding: 10px;
-}
-
-
-.grid-item{
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(6, 6, 6, 0.8);
-    
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-
-
-}
 
 
 
