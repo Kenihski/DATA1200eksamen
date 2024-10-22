@@ -2,6 +2,8 @@
     --siteblue: rgb(139, 185, 227);
     --sitegrey: rgb(238, 239, 240);
     --oslometyellow: rgb(255,220,0);
+    --oslometgrey: rgb(221, 222, 224);
+    --oslometblack: #222;
 }
 
 /* Generell start*/
@@ -33,7 +35,7 @@ body {
 
 .menu a{
     text-decoration: none;
-    color: #222;
+    color: var(--oslometblack);
 }
 
 
@@ -267,13 +269,18 @@ nav {
 
 /* flex-box-index start*/
 
+.main-index h2 {
+    margin-left: 0;
+    font-size: 1.75rem;
+}
+
 .main-index {
     display: flex; 
     justify-content: center; 
     flex-direction: column; 
     min-height: 100vh; 
     padding-top: 10px;
-    color: #222;
+    color: var(--oslometblack);
 }   
 
 .flex-container-index {
@@ -363,12 +370,6 @@ margin-right: 30%;
     justify-content: center;
     
 }
-
-/*denne under trengs ikke etterhver kanskje. men lar stå for å få overskrifter uten margin i index*/
-.flex-box-index h2 {
-    margin-left: 0;
-}
-
 
 .footer-index {
     background-color: var(--oslometyellow);  
@@ -460,7 +461,7 @@ margin-right: 30%;
 
 #lenke-boks-studenthistorier{
     text-decoration: none;
-    color: #222;
+    color: var(--oslometblack);
 }
 
 @media (max-width: 839px) {
@@ -489,14 +490,14 @@ margin-right: 30%;
     background-color: var(--oslometyellow);
     flex: 1;
     position: relative; 
-    color: #222;    
+    color: var(--oslometblack);   
 }
 
 .flex-index-bilde-nede-innhold img{
     display: block; 
 }
 
-.flex-index-bilde-nede-innhold p,h2 {
+.flex-index-bilde-nede-innhold p,h3 {
     margin: 20px;
 }
 
@@ -585,54 +586,86 @@ margin-right: 30%;
 
 /* Hovedtabell index slutt*/
 
-/* Tabell med info om programmer start */
+/* Faglig leder og tabell med info om programmer start */
 
-.flere-interesser{
-    font-size: 1.8rem;
-    margin-left: 10%;
-    margin-right: 10%;
+.studiested-overskrift, .spørsmål-om-utdanningen-overskrift, a{
+    text-decoration-color: var(--oslometyellow);
+    text-decoration-thickness: 2px;
+    color: var(--oslometblack);
+}
+
+.studiested-overskrift{
+    margin-bottom: 30px;
+}
+
+.faglig-leder-container {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid var(--oslometgrey);
+    border-bottom: 1px solid var(--oslometgrey);
+    justify-content:flex-start;
+    margin-bottom: 30px;
+}
+
+.faglig-leder-bilde {
+    flex: 0 0 80px; 
+    margin: 15px;
+    display: flex;
+}
+
+.faglig-leder {
+    flex: 1;
 }
 
 
 #lenke-programmer1, #lenke-programmer2, #lenke-programmer3, #lenke-programmer4, 
-#lenke-programmer5, #lenke-programmer6, #lenke-programmer7, #lenke-programmer8{
+#lenke-programmer5, #lenke-programmer6, #lenke-programmer7, #lenke-programmer8, #lenke-faglig-leder{
     text-decoration: none;
-    color: #222;
+    color: var(--oslometblack);
 }
 
 
-.ulike-programmer{
-    border-top: 2px solid var(--sitegrey);
+.ulike-programmer, .flere-interesser,.faglig-leder-container,.faglig-leder-overskrift,.studiested-overskrift,.spørsmål-om-utdanningen-overskrift {
     margin-left: 10%;
     margin-right: 10%;
 }
 
-#ulike-programmer-siste-mlinje {
-    border-bottom: 2px solid var(--sitegrey);;
+
+.ulike-programmer {
+    border-top: 1px solid var(--oslometgrey);
 }
 
+
+#ulike-programmer-siste-mlinje {
+    border-bottom: 1px solid var(--oslometgrey);
+}
+
+
 @media (max-width: 839px) {
-    .ulike-programmer, .flere-interesser{
+    .ulike-programmer, .flere-interesser,.faglig-leder-container,.faglig-leder-overskrift,.studiested-overskrift,.spørsmål-om-utdanningen-overskrift{
         margin-right: 3%;
         margin-left: 3%;
     }
 
 }
 
-.ulike-programmer p{
-font-size: 1.1rem;
-cursor: pointer;
-margin-bottom: 5px;
+.ulike-programmer p, .faglig-leder p{
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-bottom: 5px;
 }
 
-.info-programmer {
+
+.info-programmer, .info-faglig-leder {
     display: flex;
     align-items: flex-start;
     padding-bottom: 20px;
 }
 
-.info-box {
+.info-box, .info-fl-box {
     flex: 1;
+    flex-shrink: 1;
+    flex-grow: 0;
     text-align:center;
     flex-direction: row;
     border-right: solid 1px rgb(7,7,7);
@@ -641,14 +674,15 @@ margin-bottom: 5px;
     padding-right: 10px; 
     padding-left: 10px;
     
+    
 }
 
-.info-box:first-child{
+.info-box:first-child, .info-fl-box:first-child{
     padding-left: 0px;
 }
 
-.info-box:nth-child(4){
+.info-box:nth-child(4) , .info-fl-box:last-child{
     border-right:none;
 }
 
-/* Tabell med info om programmer slutt */
+/* Faglig leder og tabell med info om programmer slutt */
