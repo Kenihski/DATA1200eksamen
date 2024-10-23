@@ -533,6 +533,7 @@ margin-right: 30%;
 
 /* Hovedtabell index start*/
 
+
 .tabellramme {
     display: flex;
     justify-content: space-between;
@@ -548,14 +549,14 @@ margin-right: 30%;
     cursor: pointer;
     background-size: cover;
     background-position: center;
-    display: block;
+    display: inline-block;
     margin-right: 10px;
     background-image: url(../bilder/Plus_symbol.svg.png.svg)
 }
 
 
 
-#knapp-hovedtabell1:checked ~ .knapp-box {
+.gjemt-innhold:checked + .knapp-box {
     background-image: url(../bilder/Minus_symbol.svg.png.svg);
 
 }
@@ -563,21 +564,21 @@ margin-right: 30%;
 .hovedtabell-overskrift-box{
     padding: 20px;
     flex: 3;
+
+
 }
 
 .hovedinnhold-i-gjeminnhold {
     display: none;
+
+}
+
+.gjemt-innhold:checked ~ .hovedinnhold-i-gjeminnhold {
+    display: block;
     padding: 20px;
     color: black;
     margin-top: 10px;
-}
-
-#knapp-hovedtabell1:checked ~ .hovedinnhold-i-gjeminnhold {
-    display: block;
-}
-
-#knapp-hovedtabell2:checked ~ .hovedinnhold-i-gjeminnhold {
-    display: block;
+    
 }
 
 .gjemt-innhold {
@@ -586,7 +587,7 @@ margin-right: 30%;
 
 /* Hovedtabell index slutt*/
 
-/* Faglig leder og tabell med info om programmer start */
+/* Studiested, Spørsmål og utdanningen?, faglig leder og tabell med info om programmer start */
 
 .studiested-overskrift, .spørsmål-om-utdanningen-overskrift, a{
     text-decoration-color: var(--oslometyellow);
@@ -685,4 +686,4 @@ margin-right: 30%;
     border-right:none;
 }
 
-/* Faglig leder og tabell med info om programmer slutt */
+/* Studiested, Spørsmål og utdanningen?, faglig leder og tabell med info om programmer slutt */
