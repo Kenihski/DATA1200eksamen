@@ -1,3 +1,5 @@
+/*-----Root start-----*/
+
 :root {
     --siteblue: rgb(139, 185, 227);
     --sitegrey: rgb(238, 239, 240);
@@ -6,7 +8,11 @@
     --oslometblack: #222;
 }
 
-/* Generell start*/
+/*-----Root slutt-----*/
+
+
+
+/*-----Generell start-----*/
 
 * {
     box-sizing: border-box;
@@ -39,11 +45,11 @@ body {
 }
 
 
-/* Generell slutt*/
+/*-----Generell slutt-----*/
 
 
 
-/** Hamburgermeny start. Koden er inspirert av eksempelet som lå på canvas**/
+/*-----Hamburgermeny start. Koden er inspirert av eksempelet som lå på canvas-----*/
 
 #burger-toggle {display: none;}
 
@@ -103,11 +109,11 @@ nav {
 
 }
 
-/**Hamburgermenu slutt**/
+/*-----Hamburgermenu slutt-----*/
 
 
 
-/* flex-box-Activity start*/
+/*-----flex-box-Activity start-----*/
 
 .main-activity {
     display: flex; 
@@ -231,11 +237,11 @@ nav {
 }
 
 
-/* flex-box-Activity slutt*/
+/*-----flex-box-Activity slutt-----*/
 
 
 
-/* Bilder Activity start */
+/*-----Bilder Activity start-----*/
 
 .asidebilderamme-activity{
     background-color: var(--sitegrey);
@@ -262,12 +268,12 @@ nav {
     }
 }
 
-/* Bilder Activity slutt*/
+/*-----Bilder Activity slutt-----*/
 
 
 
 
-/* flex-box-index start*/
+/*-----flex-box-index start-----*/
 
 .main-index h2 {
     margin-left: 0;
@@ -389,12 +395,6 @@ margin-right: 30%;
         padding: 2%;
     }
 
-    /* kan trolig slettes
-    .flex-sub-container1-hero-index{
-        min-height: 200px;
-    }
-    */
-
     .flex-sub-container2-index {
         flex-direction: column;
     }
@@ -472,9 +472,11 @@ margin-right: 30%;
 
 }
 
-/* flex-box-index slutt*/
+/*-----flex-box-index slutt-----*/
 
-/* Bilder index start */
+
+
+/*-----Bilder index start-----*/
 
 .flex-container-index-bilde-nede {
     display: flex;
@@ -624,8 +626,6 @@ margin-right: 30%;
     color: var(--oslometblack);
     margin-top: 10px;   
 }
-
-
 
 /*Gjør at de små tabellene i Hva lærer du tar opp mer plass i bredden ved små skjermer på lik linjene med hovedtabellene*/
 @media (max-width: 700px){
