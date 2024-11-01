@@ -359,12 +359,13 @@ margin-right: 30%;
     flex-direction: column;
 }
 
+/*Sørger for at hovedinnholdet på siden ligger i midten hele tiden*/
 .flex-venstre-column-index {
     display: flex;
     flex-direction: column;
     flex: 2;
-    margin-left: 15vw;
-    margin-right: 15vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
 
     
 }
@@ -383,7 +384,35 @@ margin-right: 30%;
 }
 
 
+.header-under {
+    display: flex; 
+    justify-content: center; 
+    padding: 10px;
+    
+}   
 
+.studieoversikt-lenke {
+    display: flex;
+    max-width: 1200px; 
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;  
+}
+
+.studieoversikt-lenke a{
+    color: var(--oslometblack);
+    text-decoration-thickness: 2px;
+
+}
+
+@media (max-width:1200px) {
+    .studieoversikt-lenke {
+        padding: 0;
+        margin: 0;  
+    }
+}
+
+/*ER DET DOBBELT OPP HER?*/
 @media (max-width: 839px) {
     .flex-container-index {
         padding: 5%;
@@ -405,6 +434,7 @@ margin-right: 30%;
         margin-right: 0;
     }
 }
+
 
 @media (min-width: 840px) {
     .flex-container-index {
@@ -698,10 +728,10 @@ margin-right: 30%;
     color: var(--oslometblack);
 }
 
-
+/*Sørger for at innholdet neders av hovedinnholdet blir liggende på et smalerer området enn det øvre innholdet. % ga en bedre flytt enn vw her*/
 .ulike-programmer, .flere-interesser,.faglig-leder-container,.faglig-leder-overskrift,.studiested-overskrift,.spørsmål-om-utdanningen-overskrift {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .videre-muligheter-siste-mlinje{
