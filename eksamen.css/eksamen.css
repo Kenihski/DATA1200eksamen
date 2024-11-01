@@ -334,21 +334,27 @@ nav {
     align-items: center;
     justify-content: center;  
     font-weight: 400;
+    border-top: 1px solid var(--oslometgrey);
+    margin-top: 30px;
     
     
 }
 
+/*Justerer innholdet i boksen med tekst slik at den holder seg i midten, samt media under som endrer den ved liten skjerm*/
 .flex-index-teksts-oppe p {   
 margin-top: 5%;
 margin-bottom: 5%;
-margin-left: 30%;
-margin-right: 30%;  
+margin-left: 20%;
+margin-right: 20%;  
 }
 
 @media (max-width: 839px) {
     .flex-index-teksts-oppe p {
         margin-left: 0%;
         margin-right: 0%; 
+    }
+    .flex-index-teksts-oppe {
+        margin-top: 5px;
     }
 }
 
@@ -562,49 +568,35 @@ margin-right: 30%;
 
 /*-----Tabell med diverse informasjon om studiet start-----*/
 
-/* Denne blir trolig dobbelt og kan slettes
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(255,255,255);
-    margin: 0;
-    padding: 0;
-
-}
-*/
-
 .container-indexpage-tabelløverst{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    max-width: 1200px;
-    /*margin: 20px auto;*/ /*Kan trolig slettes for å ikke ha margin på sider*/
+    width: 100%;
     box-sizing: border-box;
 }
 
 
 .box-indexpage-tabelløverst{
     background-color: rgb(255,255,255);
-    color: rgb(0, 0, 0);
-    font-size: 1px;
-    padding-bottom: 0px;
-    padding-top: 15px;
-    padding-left: 0;
+    color: var(--oslometblack);
+    padding-bottom: 70px;
+    padding-top: 30px;
     margin: 10px;
     text-align: left;
     height: 80px;
-    width: calc(25% - 20px); /* Fire bokser på en rad */
+    width: calc(25% - 15px); /* Fire bokser på en rad justert fra 20px til 15px!!!!*/
     box-sizing: border-box;
-    border-top: 1px solid rgb(0, 0, 0);
+    border-top: 1px solid var(--oslometblack);
     word-break: keep-all;
-    hyphens: auto;
-    
 }
 
 
+
+
 .box-indexpage-tabelløverst h2 {
-    margin-top: 24px;
     margin-bottom: 5px;
-    font-size: 17px;
+    font-size: 18px;
 }
 
 
@@ -624,6 +616,15 @@ body{
 #box6-indexpage-tabelløverst {order: 6; }
 #box7-indexpage-tabelløverst {order: 7; }
 
+#box1-indexpage-tabelløverst, #box5-indexpage-tabelløverst{
+    margin-left:0;
+    padding-left: 0;
+}
+
+#box4-indexpage-tabelløverst{
+    margin-right:0;
+    padding-right: 0;
+}
 
 #box6-indexpage-tabelløverst {
     height: 107px;
@@ -633,6 +634,8 @@ body{
 @media (max-width: 839px){
     .box-indexpage-tabelløverst {
         flex: 1 1 100%; /* En boks per rad */
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
