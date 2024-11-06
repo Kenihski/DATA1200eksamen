@@ -24,7 +24,12 @@ Innhold slutt --*/
 
 
 /**---------------- Generell start ----------------**/
-/*--- Inneholder Root, Diverse og Hamburgermeny ---*/
+/*
+Inneholder
+- Root
+- Diverse
+- Hamburgermeny
+*/
 
 
 /*-----Root start-----*/
@@ -167,7 +172,12 @@ background-color: var(--oslometyellow);
 
 
 /**---------------- Activity page start ----------------**/
-/*--- Innheholder Flex-box-Activity og Bilder Activity---*/
+/*
+Inneholder 
+-Flex-box-Activity
+-Bilder Activity
+*/
+
 
 /*-----flex-box-Activity start-----*/
 
@@ -357,10 +367,15 @@ background-color: var(--oslometyellow);
 
 
 /**------------------- Index page start -------------------**/
+/* 
+Inneholder 
+- Flex-box-index 
+- Bilder index
+- Tabell med diverse informasjon om studiet
+- Hovedtabell index og Index Studiested, Spørsmål om utdanningen?, faglig leder, 
+tabell med info om programmer, og tabell for videre studiemuligheter 
+*/
 
-/*--- Inneholder Flex-box-index, Bilder index, Tabell med diverse informasjon om studiet, 
-Hovedtabell index og Index Studiested, Spørsmål om utdanningen?, faglig leder, tabell med 
-info om programmer, og tabell for videre studiemuligheter ---*/
 
 /*-----flex-box-index start-----*/
 
@@ -502,6 +517,7 @@ margin-right: 20%;
     background-size: cover;
     height: 12px;
     width: 12px;
+    flex-shrink: 0; /*Denne hindrer pilen i å krympe*/
     background-color: var(--oslometyellow);
     margin-right: 3px;
 }
@@ -659,6 +675,7 @@ padding-left: 15px;
     background-size: cover;
     height: 12px;
     width: 12px;
+    flex-shrink: 0; /*Denne hindrer pilen i å krympe*/
     margin-right: 15px;
     transition: transform 0.2s ease; /*Sørger for at pilen flytter seg gjevnt og ikke med et "klikk"*/
 }
@@ -992,6 +1009,7 @@ padding-left: 15px;
 /*----- Index Studiested, Spørsmål om utdanningen?, faglig leder, tabell 
 med info om programmer, og tabell for videre studiemuligheter start-----*/
 
+/*---Studiested start---*/
 .studiested-overskrift a, .spørsmål-om-utdanningen-overskrift a{
     text-decoration-color: var(--oslometyellow);
     text-decoration-thickness: 2px;
@@ -1008,11 +1026,14 @@ med info om programmer, og tabell for videre studiemuligheter start-----*/
     background-size: cover;
     height: 12px;
     width: 12px;
+    flex-shrink: 0; /*Denne hindrer pilen i å krympe*/
     margin-right: 10px;
 }
+/*---Studiested slutt---*/
 
-
-.faglig-leder-container {
+/*herherher*/
+/*---faglig leder start---*/
+.faglig-leder-container{
     display: flex;
     align-items: center;
     border-top: 1px solid var(--oslometgrey);
@@ -1020,6 +1041,15 @@ med info om programmer, og tabell for videre studiemuligheter start-----*/
     justify-content:flex-start;
     margin-bottom: 30px;
 }
+
+/*Gjør inholdet til row som utgangspunkt ved stor skjerm*/
+.faglig-leder-bilde-og-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
 
 .faglig-leder-bilde {
     flex: 0 0 80px; /*inkludert flekst grow, shrink og basis i en linje*/
@@ -1029,7 +1059,30 @@ med info om programmer, og tabell for videre studiemuligheter start-----*/
 }
 
 .faglig-leder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     flex: 1;
+}
+
+/*Gjør innholdet om til row fra kolonne ved mindre skjerm eller zoomet godt inn. Men ikke før det trengs derfor lav px*/
+@media (max-width:500px) {
+    .faglig-leder-bilde-og-info{
+        flex-direction: column;
+    }
+    .faglig-leder-bilde img {
+        height: auto;
+        width: 60px; 
+        margin-top: 10px; 
+    }
+    .faglig-leder-container{
+        justify-content: space-between; 
+        align-items: center;
+    }
+    .faglig-leder p{
+        margin-top: 0; 
+        margin-bottom: 10px;
+    }
 }
 
 .pil-faglig-leder{
@@ -1038,6 +1091,7 @@ med info om programmer, og tabell for videre studiemuligheter start-----*/
     background-size: cover;
     height: 12px;
     width: 12px;
+    flex-shrink: 0; /*Denne hindrer pilen i å krympe*/
     margin-right: 15px;
     transition: transform 0.2s ease; /*Sørger for at pilen flytter seg gjevnt og ikke med et "klikk"*/
 }
@@ -1051,6 +1105,8 @@ med info om programmer, og tabell for videre studiemuligheter start-----*/
     text-decoration: none;
     color: var(--oslometblack);
 }
+
+/*---faglig leder slutt---*/
 
 /*Sørger for at innholdet neders av hovedinnholdet blir liggende på et smalerer området enn det øvre innholdet. % ga en bedre flytt enn vw her*/
 .ulike-programmer, .flere-interesser,.faglig-leder-container,.faglig-leder-overskrift,.studiested-overskrift,.spørsmål-om-utdanningen-overskrift {
