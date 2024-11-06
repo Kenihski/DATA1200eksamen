@@ -1,3 +1,32 @@
+/*----------- Hjemmeeksamen DATA 1200 høst 2024 ----------*/
+
+/*-- Innhold start
+
+Generell
+- Root
+- Diverse
+- Hamburgermeny
+
+Activity page
+- Flex-box-Activity 
+- Bilder Activity
+
+Index page
+- Flex-box-index 
+- Bilder index 
+- Tabell med diverse informasjon om studiet
+- Hovedtabell index
+- Index Studiested, Spørsmål om utdanningen?, faglig leder, tabell med info om programmer, og tabell for videre studiemuligheter
+
+Innhold slutt --*/
+
+
+
+
+/**---------------- Generell start ----------------**/
+/*--- Inneholder Root, Diverse og Hamburgermeny ---*/
+
+
 /*-----Root start-----*/
 
 :root {
@@ -12,7 +41,7 @@
 
 
 
-/*-----Generell start-----*/
+/*----- Diverse start-----*/
 
 * {
     box-sizing: border-box;
@@ -48,7 +77,7 @@ body {
 }
 
 
-/*-----Generell slutt-----*/
+/*----- Diverse slutt-----*/
 
 
 
@@ -132,9 +161,13 @@ background-color: var(--oslometyellow);
 
 /*-----Hamburgermenu slutt-----*/
 
+/**---------------- Generell slutt ----------------**/
+
+
 
 
 /**---------------- Activity page start ----------------**/
+/*--- Innheholder Flex-box-Activity og Bilder Activity---*/
 
 /*-----flex-box-Activity start-----*/
 
@@ -170,7 +203,7 @@ background-color: var(--oslometyellow);
 
 .overskrift-activity {
     color: white;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5); /*Gir en gjennomsiktig sort/grå bakgrunnsfarge*/
     padding: 10px;
     margin: 0;
     font-size: 2.2rem;
@@ -200,12 +233,13 @@ background-color: var(--oslometyellow);
 }
 
 .flex-høyre-column-activity {
-    flex: 1;
+    flex: 1; /*Sørger for at innholdet tar riktig plass og ikke blir for stort*/
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+/*slettes?*/
 .flex-høyre-column-activity.flex-box-activity {
     flex: none; 
 }
@@ -266,11 +300,34 @@ background-color: var(--oslometyellow);
 
 /*-----Bilder Activity start-----*/
 
+/*herherher*/
 .asidebilderamme-activity{
     background-color: var(--sitegrey);
     border: 10px solid var(--sitegrey);
+    border-bottom: 0;
     background-size: cover; 
+    overflow: hidden; /*Gjør at bilde ikke går over rammen ved zoom-hover*/
  }
+
+ .asidebilderamme-activity img {
+    display: block; /*Gjør at bilde holder seg innenfor en ramme og fjerner eventuelle sorte kanter*/
+    width: 100%; 
+    transition: transform 0.3s ease; /*Gir en smoothere overgang på hover-zoom*/
+}
+
+
+.asidebilderamme-activity:hover img {
+    transform: scale(1.2); /*Zoomer inn bilde 20% ved hover*/
+}
+
+
+.columnaside-activity{
+    background-color: var(--sitegrey);
+    border: 10px solid var(--sitegrey);
+    border-top: 0;
+    display: flex;
+ 
+}
 
  .column-activity {
     float: left;
@@ -280,6 +337,8 @@ background-color: var(--oslometyellow);
     background-size: cover;
 }
 
+
+/*slettes?*/
 .row-activity {
     clear: both;
     display: table;   
@@ -297,7 +356,11 @@ background-color: var(--oslometyellow);
 
 
 
-/**---------------- Index page start ----------------**/
+/**------------------- Index page start -------------------**/
+
+/*--- Inneholder Flex-box-index, Bilder index, Tabell med diverse informasjon om studiet, 
+Hovedtabell index og Index Studiested, Spørsmål om utdanningen?, faglig leder, tabell med 
+info om programmer, og tabell for videre studiemuligheter ---*/
 
 /*-----flex-box-index start-----*/
 
@@ -315,6 +378,7 @@ background-color: var(--oslometyellow);
     color: var(--oslometblack);
 }   
 
+/*max-with 1200px brukes som standard på denne siden for å ha innholdet sentrert på midten*/
 .flex-container-index {
     display: flex;
     flex-direction: column;
@@ -415,12 +479,10 @@ margin-right: 20%;
     padding: 1.5em;
 }
 
-
-
-/*herherher*/
-
+/*Sørger for at logen og menyen legger seg på en rad istedenfor en kolonne*/
 .header-over{
     display: flex;
+    flex-direction: row;
     max-width: 1200px; 
     width: 100%;
     padding: 0 20px 30px 20px;
@@ -431,9 +493,18 @@ margin-right: 20%;
     display: flex; 
     justify-content: center; 
     padding: 10px;
-    
 }   
 
+.pil-studieoversikt-lenke{
+    display: inline-block; /*sørger for at bilde ligger på linje med teksten ved bruk av span*/
+    background-image: url(../bilder/pil_høyre.webp);
+    transform: scaleX(-1); /*Gjør at bilde speiler mot venstre, istedenfor til høyre som orginalen*/
+    background-size: cover;
+    height: 12px;
+    width: 12px;
+    background-color: var(--oslometyellow);
+    margin-right: 3px;
+}
 
 .studieoversikt-lenke {
     display: flex;
@@ -441,9 +512,10 @@ margin-right: 20%;
     width: 100%;
     padding: 0 20px;
     margin: 0 auto;  
+    align-items: center;
 }
 
-.studieoversikt-lenke a{
+.studieoversikt-lenke-wrapper{
     color: var(--oslometblack);
     text-decoration-thickness: 2px;
 }
@@ -457,7 +529,7 @@ margin-right: 20%;
         padding-left: 2%;
         padding-bottom: 0;
     }
-    .studieoversikt-lenke {
+    .studieoversikt-lenke{
         padding-left: 0;
     }
     #index-header{
@@ -473,7 +545,7 @@ margin-right: 20%;
     .header-under {
         padding-left: 1%;
     }
-    .studieoversikt-lenke {
+    .studieoversikt-lenke{
         padding-left: 0;
     }
     #index-header{
@@ -485,7 +557,7 @@ margin-right: 20%;
     .header-under {
         padding-left: 1%;
     }
-    .studieoversikt-lenke {
+    .studieoversikt-lenke{
         padding: 0 20px;
         margin: 0 auto; 
     }
@@ -554,12 +626,18 @@ margin-right: 20%;
     background-size:cover;
     background-color: var(--oslometyellow);
     align-items: center;
-    justify-content: center; 
+    justify-content: space-between; 
     margin: 30px;
     margin-right: 30%;
     margin-left: 30%;
     padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 1.5rem; 
+}
+
+.flex-studenthistorier p{
+padding-left: 15px;
 }
 
 .lenke-boks-studenthistorier{
@@ -573,6 +651,25 @@ margin-right: 20%;
         margin-left: 0%;
     }
 
+}
+
+.pil-flex-studenthistorier{
+    display: flex; 
+    background-image: url(../bilder/pil_høyre.webp);
+    background-size: cover;
+    height: 12px;
+    width: 12px;
+    margin-right: 15px;
+    transition: transform 0.2s ease; /*Sørger for at pilen flytter seg gjevnt og ikke med et "klikk"*/
+}
+
+/*Flytter pil til høyre når man hovrer over hele boksen slik som på oslomet sin side*/
+.flex-studenthistorier:hover .pil-flex-studenthistorier{
+    transform: translateX(5px); 
+}
+/*Gir boksen et mørt skjær ved hover*/
+.lenke-boks-studenthistorier:hover .flex-studenthistorier {
+    background-color:  rgb(224, 195, 2);
 }
 
 /*-----flex-box-index slutt-----*/
@@ -640,11 +737,14 @@ margin-right: 20%;
     background-color: var(--oslometyellow);
     flex: 1;
     position: relative; 
-    color: var(--oslometblack);   
+    color: var(--oslometblack);  
+    overflow: hidden; /*Sørger for at bilde ved hover ikke går utenfor boksen*/
 }
 
 .flex-index-bilde-nede-innhold img{
-    display: block; 
+    display: block; /*Gjør at bilde holder seg innenfor en ramme og fjerner eventuelle sorte kanter*/
+    width: 100%;
+    transition: transform 0.3s ease; /*Gir zoom av bilde en mykere overgang*/
 }
 
 .flex-index-bilde-nede-innhold p,h3 {
@@ -652,11 +752,15 @@ margin-right: 20%;
 }
 
 .fibni1 {
-    order: 1;
+    order: 1; /*Gjør at boksen med tekst legger seg under ved kolonne*/
 }
 
 .fibni2{
-    order: 2;
+    order: 2;  /*Gjør at boksen med bilde ligger seg på topp ved kolonne*/
+}
+
+.fibni2:hover img{
+    transform: scale(1.2); /*Zoomer inn bilde ved hover*/
 }
 
 .lenke-boks-fibnil{
@@ -885,7 +989,8 @@ margin-right: 20%;
 
 
 
-/*----- index Studiested, Spørsmål og utdanningen?, faglig leder, tabell med info om programmer start, og tabell for videre studiemuligheter start-----*/
+/*----- Index Studiested, Spørsmål om utdanningen?, faglig leder, tabell 
+med info om programmer, og tabell for videre studiemuligheter start-----*/
 
 .studiested-overskrift a, .spørsmål-om-utdanningen-overskrift a{
     text-decoration-color: var(--oslometyellow);
@@ -896,6 +1001,16 @@ margin-right: 20%;
 .studiested-overskrift{
     margin-bottom: 30px;
 }
+
+.pil-studiested-overskrift{
+    display: inline-block; /*sørger for at bilde ligger på linje med teksten ved bruk av span*/
+    background-image: url(../bilder/pil_høyre.webp);
+    background-size: cover;
+    height: 12px;
+    width: 12px;
+    margin-right: 10px;
+}
+
 
 .faglig-leder-container {
     display: flex;
@@ -917,6 +1032,20 @@ margin-right: 20%;
     flex: 1;
 }
 
+.pil-faglig-leder{
+    display: flex; 
+    background-image: url(../bilder/pil_høyre.webp);
+    background-size: cover;
+    height: 12px;
+    width: 12px;
+    margin-right: 15px;
+    transition: transform 0.2s ease; /*Sørger for at pilen flytter seg gjevnt og ikke med et "klikk"*/
+}
+
+/*Flytter pil til høyre når man hovrer over hele boksen slik som på oslomet sin side*/
+.faglig-leder-container:hover .pil-faglig-leder{
+    transform: translateX(5px); 
+}
 
 .lenke-programmer, .lenke-faglig-leder{
     text-decoration: none;
@@ -973,11 +1102,14 @@ Dette gir en illusjon av at alle boksene har en linje øverst og nederst*/
     margin-bottom: 5px;
 }
 
-
 .info-programmer, .info-faglig-leder {
     display: flex;
     align-items: flex-start;
     padding-bottom: 20px;
+}
+
+.info-programmer{
+    flex-wrap: wrap; /*Lar boksene bryte når det zoomes inn sånn at pilen forblir i bilde*/
 }
 
 .info-box, .info-fl-box {
@@ -986,13 +1118,11 @@ Dette gir en illusjon av at alle boksene har en linje øverst og nederst*/
     flex-grow: 0;
     text-align:center;
     flex-direction: row;
-    border-right: solid 1px rgb(7,7,7);
+    border-right: solid 1px var(--oslometblack);
     font-size: small;
-    white-space: nowrap;
+    white-space: nowrap; /*Sørger for at innholdet holder seg på en linje*/
     padding-right: 10px; 
-    padding-left: 10px;
-    
-    
+    padding-left: 10px;  
 }
 
 .info-box:first-child, .info-fl-box:first-child{
@@ -1003,6 +1133,37 @@ Dette gir en illusjon av at alle boksene har en linje øverst og nederst*/
     border-right:none;
 }
 
-/*----- index Studiested, Spørsmål og utdanningen?, faglig leder og tabell med info om programmer slutt-----*/
 
-/**---------------- Index page slutt ----------------**/
+
+.ulike-programmer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /*Fordeler innholdet gjevnt*/
+    align-items: center;
+}
+
+.hoved-ulike-programmer{
+    flex: 1; /*Elementene tar opp tilgjengelig plass, komplementerer space-between i boksen over*/
+}
+
+.pil-ulike-programmer{
+    display: flex; 
+    justify-content: center;
+    background-image: url(../bilder/pil_høyre.webp);
+    background-size: cover;
+    height: 12px;
+    width: 12px;
+    margin-right: 15px;
+    transition: transform 0.2s ease; /*Sørger for at pilen flytter seg gjevnt og ikke med et "klikk"*/
+}
+
+/*Flytter pil til høyre når man hovrer over hele boksen slik som på oslomet sin side*/
+.ulike-programmer:hover .pil-ulike-programmer{
+    transform: translateX(5px); 
+}
+
+
+/*----- Index Studiested, Spørsmål om utdanningen?, faglig leder, tabell
+med info om programmer, og tabell for videre studiemuligheter slutt-----*/
+
+/**------------------- Index page slutt -------------------**/

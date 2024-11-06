@@ -30,9 +30,13 @@
             </nav>
         </div>    
         
-        <div class="header-under"> 
-            <div class="studieoversikt-lenke"> <p><a href="https://www.oslomet.no/studier/studieoversikt"><b>Studieoversikt</b></a></p></div>
-        </div>
+        <!-- Bruker span inni div for bilde i innline-element -->
+        <a href="https://www.oslomet.no/studier/studieoversikt" class="studieoversikt-lenke-wrapper"> 
+            <div class="header-under">  
+                <div class="studieoversikt-lenke"><p><span class="pil-studieoversikt-lenke"></span><b>Studieoversikt</b></p>
+                    </div>
+            </div>
+        </a>
         
     </header>
 
@@ -322,16 +326,18 @@
                             <div class="hovedinnhold-i-gjeminnhold hovedinnhold-i-gjeminnhold-videre-studiemuligheter">
 
                                 <a href="https://www.oslomet.no/studier/tkd/anvendt-data-informasjonsteknologi" class="lenke-programmer"> 
-                                    <div class="ulike-programmer videre-muligheter-siste-mlinje">
-                                        <p><b>Anvendt data- og informasjonsteknologi (ACIT)</b></p>
-                                        <div class = "info-programmer">
-                                            <div class="info-box">Bachelorprogram</div>
-                                            <div class="info-box">3 år</div>
-                                            <div class="info-box">Pilestredet i Oslo</div>
-                                            <div class="info-box">Heltid</div>
-                                            <div class="info-box"></div>  
+                                        <div class="ulike-programmer videre-muligheter-siste-mlinje">
+                                            <div class="hoved-ulike-programmer">
+                                                <p><b>Anvendt data- og informasjonsteknologi (ACIT)</b></p>
+                                                <div class = "info-programmer">
+                                                    <div class="info-box">Bachelorprogram</div>
+                                                    <div class="info-box">3 år</div>
+                                                    <div class="info-box">Pilestredet i Oslo</div>
+                                                    <div class="info-box">Heltid</div>
+                                                </div>
+                                            </div>
+                                            <div class="pil-ulike-programmer"></div>
                                         </div>
-                                    </div>
                                 </a>
 
                             </div>
@@ -345,7 +351,7 @@
 
                     <div class="studiested-overskrift">
                         <h2>Studiested</h2>
-                        <p><a href="https://www.oslomet.no/om/studiested-pilestredet"><b>Studiested Pilestredet</b></a></p>
+                        <p><a href="https://www.oslomet.no/om/studiested-pilestredet"><span class="pil-studiested-overskrift"></span><b>Studiested Pilestredet</b></a></p>
                     </div>
 
                     <div class="spørsmål-om-utdanningen-overskrift">
@@ -371,6 +377,7 @@
                                 <div class="info-fl-box">kristoffer.hellton@oslomet.no</div>
                                 </div>
                             </div>
+                            <div class="pil-faglig-leder"></div>
                         </div>
                     </a>
                     
@@ -381,105 +388,125 @@
 
                     <a href="https://www.oslomet.no/studier/tkd/anvendt-datateknologi" class="lenke-programmer"> 
                         <div class="ulike-programmer">
-                            <p><b>Anvendt datateknologi</b></p>
-                            <div class = "info-programmer">
-                                <div class="info-box">Bachelorprogram</div>
-                                <div class="info-box">3 år</div>
-                                <div class="info-box">Pilestredet i Oslo</div>
-                                <div class="info-box">Heltid</div>
+                            <div class="hoved-ulike-programmer">
+                                <p><b>Anvendt datateknologi</b></p>
+                                <div class = "info-programmer">
+                                    <div class="info-box 1">Bachelorprogram</div>
+                                    <div class="info-box 2">3 år</div>
+                                    <div class="info-box 3">Pilestredet i Oslo</div>
+                                    <div class="info-box 4">Heltid</div>
+                                </div>
                             </div>
+                            <div class="pil-ulike-programmer"></div>
                         </div>
                     </a>
 
                     <a href="https://www.oslomet.no/studier/tkd/bioteknologi-kjemiingenior" class="lenke-programmer"> 
                         <div class="ulike-programmer">
-                            <p><b>Bioteknologi- og kjemiingeniør</b></p>
-                            <div class = "info-programmer">
-                                <div class="info-box">Bachelorprogram</div>
-                                <div class="info-box">3 år</div>
-                                <div class="info-box">Pilestredet i Oslo</div>
-                                <div class="info-box">Heltid</div>
-                                <div class="info-box"></div>  
+                            <div class="hoved-ulike-programmer">
+                                <p><b>Bioteknologi- og kjemiingeniør</b></p>
+                                <div class = "info-programmer">
+                                    <div class="info-box">Bachelorprogram</div>
+                                    <div class="info-box">3 år</div>
+                                    <div class="info-box">Pilestredet i Oslo</div>
+                                    <div class="info-box">Heltid</div>
+                                </div>
                             </div>
+                            <div class="pil-ulike-programmer"></div>
                         </div>
                     </a>
+
                     <a href="https://www.oslomet.no/studier/tkd/byggingenior" class="lenke-programmer"> 
                         <div class="ulike-programmer">
-                            <p><b>Byggingeniør</b></p>
-                            <div class = "info-programmer">
-                                <div class="info-box">Bachelorprogram</div>
-                                <div class="info-box">3 år</div>
-                                <div class="info-box">Pilestredet i Oslo</div>
-                                <div class="info-box">Heltid</div>
-                                <div class="info-box"></div>  
+                            <div class="hoved-ulike-programmer">
+                                <p><b>Byggingeniør</b></p>
+                                <div class = "info-programmer">
+                                    <div class="info-box">Bachelorprogram</div>
+                                    <div class="info-box">3 år</div>
+                                    <div class="info-box">Pilestredet i Oslo</div>
+                                    <div class="info-box">Heltid</div>
+                                </div>
                             </div>
+                            <div class="pil-ulike-programmer"></div>
                         </div>
                     </a>
 
                     <a href="https://www.oslomet.no/studier/tkd/dataingenior" class="lenke-programmer"> 
                         <div class="ulike-programmer">
-                            <p><b>Dataingeniør</b></p>
-                            <div class = "info-programmer">
-                                <div class="info-box">Bachelorprogram</div>
-                                <div class="info-box">3 år</div>
-                                <div class="info-box">Pilestredet i Oslo</div>
-                                <div class="info-box">Heltid</div>
-                                <div class="info-box"></div>  
+                            <div class="hoved-ulike-programmer">
+                                <p><b>Dataingeniør</b></p>
+                                <div class = "info-programmer">
+                                    <div class="info-box">Bachelorprogram</div>
+                                    <div class="info-box">3 år</div>
+                                    <div class="info-box">Pilestredet i Oslo</div>
+                                    <div class="info-box">Heltid</div>
+                                </div>
                             </div>
+                            <div class="pil-ulike-programmer"></div>
                         </div>
                     </a>
+
                     <a href="https://www.oslomet.no/studier/tkd/elektronikkingenior" class="lenke-programmer"> 
-                        <div class="ulike-programmer">
-                            <p><b>Elektronikkingeniør</b></p>
-                            <div class = "info-programmer">
-                                <div class="info-box">Bachelorprogram</div>
-                                <div class="info-box">3 år</div>
-                                <div class="info-box">Pilestredet i Oslo</div>
-                                <div class="info-box">Heltid</div>
-                                <div class="info-box"></div>  
+                         <div class="ulike-programmer">
+                            <div class="hoved-ulike-programmer">
+                                <p><b>Elektronikkingeniør</b></p>
+                                <div class = "info-programmer">
+                                    <div class="info-box">Bachelorprogram</div>
+                                    <div class="info-box">3 år</div>
+                                    <div class="info-box">Pilestredet i Oslo</div>
+                                    <div class="info-box">Heltid</div>
+                                </div>
                             </div>
+                            <div class="pil-ulike-programmer"></div>
                         </div>
                     </a>
+
                     <a href="https://www.oslomet.no/studier/tkd/informasjonsteknologi" class="lenke-programmer"> 
                         <div class="ulike-programmer">
-                            <p><b>Informasjonsteknologi</b></p>
-                            <div class = "info-programmer">
-                                <div class="info-box">Bachelorprogram</div>
-                                <div class="info-box">3 år</div>
-                                <div class="info-box">Pilestredet i Oslo</div>
-                                <div class="info-box">Heltid</div>
-                                <div class="info-box"></div>  
+                            <div class="hoved-ulike-programmer">
+                                <p><b>Informasjonsteknologi</b></p>
+                                <div class = "info-programmer">
+                                    <div class="info-box">Bachelorprogram</div>
+                                    <div class="info-box">3 år</div>
+                                    <div class="info-box">Pilestredet i Oslo</div>
+                                    <div class="info-box">Heltid</div>
+                                </div>
                             </div>
+                            <div class="pil-ulike-programmer"></div>
                         </div>
                     </a>
+
+
                     <a href="https://www.oslomet.no/studier/tkd/maskiningenior" class="lenke-programmer"> 
                         <div class="ulike-programmer">
-                            <p><b>Maskiningeniør</b></p>
-                            <div class = "info-programmer">
-                                <div class="info-box">Bachelorprogram</div>
-                                <div class="info-box">3 år</div>
-                                <div class="info-box">Pilestredet i Oslo</div>
-                                <div class="info-box">Heltid</div>
-                                <div class="info-box"></div>  
+                            <div class="hoved-ulike-programmer">
+                                <p><b>Maskiningeniør</b></p>
+                                <div class = "info-programmer">
+                                    <div class="info-box">Bachelorprogram</div>
+                                    <div class="info-box">3 år</div>
+                                    <div class="info-box">Pilestredet i Oslo</div>
+                                    <div class="info-box">Heltid</div>
+                                </div>
                             </div>
+                            <div class="pil-ulike-programmer"></div>
                         </div>
                     </a>
+
                     <a href="https://www.oslomet.no/studier/tkd/tre-termin-ingenior" class="lenke-programmer"> 
                         <div class="ulike-programmer ulike-programmer-siste-mlinje">
-                            <p><b>Tre-terminsordning til ingeniørutdanning</b></p>
-                            <div class = "info-programmer">
-                                <div class="info-box">Bachelorprogram</div>
-                                <div class="info-box">3 år</div>
-                                <div class="info-box">Pilestredet i Oslo</div>
-                                <div class="info-box">Heltid</div>
-                                <div class="info-box"></div>  
+                            <div class="hoved-ulike-programmer">
+                                <p><b>Tre-terminsordning til ingeniørutdanning</b></p>
+                                <div class = "info-programmer">
+                                    <div class="info-box">Bachelorprogram</div>
+                                    <div class="info-box">3 år</div>
+                                    <div class="info-box">Pilestredet i Oslo</div>
+                                    <div class="info-box">Heltid</div>
+                                </div>
                             </div>
+                            <div class="pil-ulike-programmer"></div>
                         </div>
                     </a>
-
                 </article>
-
-
 
 
                 <div class="studenthistorier">
@@ -504,6 +531,7 @@
                 <a href="https://www.oslomet.no/studier/studenthistorier" class="lenke-boks-studenthistorier">
                     <div class="flex-studenthistorier">
                         <p><b>Flere studenthistorier</b></p>
+                        <div class="pil-flex-studenthistorier"></div>
                     </div>
                 </a>
                 
