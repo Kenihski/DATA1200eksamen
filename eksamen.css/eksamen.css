@@ -33,6 +33,7 @@ Inneholder
 
 
 /*-----Root start-----*/
+/* Denne delen brukes til farger som brukes igjen flere ganger*/
 
 :root {
     --siteblue: rgb(139, 185, 227);
@@ -47,7 +48,7 @@ Inneholder
 
 
 /*----- Diverse start-----*/
-
+/* Kode som generelt fungerer som utgangspunkt eller endringer av utgangspunkt*/
 * {
     box-sizing: border-box;
 }
@@ -86,8 +87,8 @@ body {
 
 
 
-/*-----Hamburgermeny start. Koden er inspirert av eksempelet som lå på canvas-----*/
-
+/*----- Hamburgermeny start -----*/
+/* Koden som danner menyen i header på alle sider, denne er inspirert og modifert fra pensum*/
 #burger-toggle {display: none;}
 
 @media (min-width:901px) {
