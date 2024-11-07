@@ -294,77 +294,72 @@ body{
 
 
 
-
-
-.container-footer-indexpage {
+.footer-indexpage {
     background-color: rgb(255, 220, 0);
 }
 
 
 
-.containerA-indexpage-footer {
+
+.container-footer-indexpage {
+    flex-direction: column;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex: 1; 
+} 
 
-    padding-left: 14%;
-    padding-right: 14%;
-    /*
-    eller:
-    padding-left: 210px; /*------*/
-    /*padding-right: 210px;*/
 
-    min-height: 155px;
-    border-bottom: 1px solid rgb(0, 0, 0);
-}
 
-.boxA-indexpage-footer {
+.container-a-indexpage-footer {
+    max-width: 1200px;
     flex: 1;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 155px;
+}
+
+/* Egen boks for kun en skille-linje slik at den oppfører seg annerledes (strekker seg langs hele footeren)*/
+.box-linje-indexpage-footer {
+    border-top: 1px solid rgb(0, 0, 0);
+    width: auto;
 }
 
 
-#box1A-indexpage-footer {
+
+.box-1a-indexpage-footer {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     text-align: left;
+    font-size: 1.4rem;
+    border: solid black; /* Midlertidig !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+    margin-left: 50px;
+    margin-right: 140px;
 
-    margin-right: 15%;
-    font-size: 23px;
-
-    /*
-    margin-right: 150px;
-    /*flex-grow: 2;*/
-
-    border: solid black; /* Midlertidig */
 
 }
 
 
-
-
 /* Den sorte "Abonner på nyhet" knappen: */
-#box2A-indexpage-footer {
-    flex-grow: 2;
+.box-2a-indexpage-footer {
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     text-align: center;
-    font-size: 15px;
+    font-size: 1rem;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 3px;
     padding-bottom: 3px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    
+    white-space: nowrap;
+    margin-right: 50px;
 }
+
 /* Lenken til "Abonner på vårt nyhetsbrev: */ 
-#lenke-til-box2A-indexpage-footer {
+
+.lenke-til-box-2a-indexpage-footer {
     text-decoration: none;
 }
 
@@ -372,40 +367,31 @@ body{
 
 
 
-
-
-
-.containerB-indexpage-footer {
+.container-b-indexpage-footer {
+    max-width: 1200px;
+    flex: 1;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     padding-top: 60px;
     padding-bottom: 70px;
-
-    padding-left: 14%;
-    /*
-    eller:
-    padding-left: 210px; /*------*/
-    
-}
-
-.boxB-indexpage-footer {
-    flex: 1;
 }
 
 
 
-
-
-
-
-
-.boxB-indexpage-footer a {
+.box-3b-indexpage-footer a,
+.box-4b-indexpage-footer a,
+.box-5b-indexpage-footer a {
     color : rgb(0,0,0); /* Setter fargen på lenkene til sort */
     text-decoration: none; /* Fjerner standard understreking */
 }
 
-/* Her defineres stilen/utseende for lenken når mus-pilen holdes over: */
-.boxB-indexpage-footer a:hover {
+/* Her defineres stilen/utseende for lenkene når mus-pilen holdes over: */
+.box-3b-indexpage-footer a:hover,
+.box-4b-indexpage-footer a:hover,
+.box-5b-indexpage-footer a:hover {
     text-decoration: underline; /* Legger til understreking når mus-pilen føres på teksten*/
     text-decoration-thickness: 2px; /* Setter tykkelsen på understrekingen */
 }
@@ -413,113 +399,86 @@ body{
 
 
 
-#box3B-indexpage-footer {
-    margin-right: 100px;
-
-
-
+.box-3b-indexpage-footer {
+    /*margin-right: 100px;*/
+    margin-left: 50px;
     border: solid black; /* Midlertidig */
 }
 
 
-#box4B-indexpage-footer {
+.box-4b-indexpage-footer {
     line-height: 15px; /* Justerer linjehøyden for å gjøre teksten mer kompakt */
-    
-    
-    /*border: solid black; /* Midlertidig */
+    padding-left: 200px;
+    padding-top: 20px;
 }
 
-#box4B-indexpage-footer a {
-    display: block; /* Sørger for at lenkene vises på nye linje r*/
+.box-4b-indexpage-footer a {
+    display: block; /* Sørger for at lenkene vises på nye linje */
     font-size: 13px; 
 
 }
 
 
+.box-5b-indexpage-footer {
+    margin-right: 150px;
+    margin-top: 20px;
+}
 
 
 @media (max-width: 839px){
-        .containerA-indexpage-footer {
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .containerB-indexpage-footer {
-            display: flex;
-            flex-direction: column;
-        }
+    .container-a-indexpage-footer,
+    .container-b-indexpage-footer {
+        display: flex;
+        flex-direction: column; /* Endrer retningen på flexboxene slik at de legges i en kolonne når bredden er under 839px*/
+        align-items: flex-start; /* Legger boksene inntil venstre side */
+    }    
 
-        #box1A-indexpage-footer,
-        #box2A-indexpage-footer,
-        #box3B-indexpage-footer,
-        #box4B-indexpage-footer,
-        #box5B-indexpage-footer {
-            width: 100%; /* For at boksene skal ta opp hele bredden*/
-            margin-bottom: 30px; /* Litt avstand mellom boksene */
-        }
+    .box-1a-indexpage-footer,
+    .box-2a-indexpage-footer,
+    .box-3b-indexpage-footer,
+    .box-4b-indexpage-footer,
+    .box-5b-indexpage-footer {
+        margin-left: 20px; /* Justerer margin til venstre for alle boksene */
+        margin-bottom: 30px; /* En liten avstand mellom alle boksene i kolonnen */
     }
 
 
-
-
-
-
-
-
-
-
-
-/*
-
-
-
-.container-indexpage-footer {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-    width: 100%
-}
-
-
-.box-indexpage-footer{
-    background-color: rgb(250, 204, 0);
-    color: black;
-    padding: 20px;
-    text-align: left;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid black;
-    height: 50px;
-    width: 200px;
-    flex-basis: calc(50% - 25px);
-   
-    
-}
-
-
-#box1-indexpage-footer, #box2-indexpage-footer {
-    order: 1;
-}
-
-#box3-indexpage-footer, #box4-indexpage-footer, #box5-indexpage-footer {
-    flex-basis: calc(33.33% - 33.33px);
-    order: 2;
-}
-
-
-
-@media (max-width: 834px) {
-    .container-indexpage-footer {
-        flex-direction: column;
+    .box-1a-indexpage-footer h2 {
+        font-size: 1.8rem; /* Ønskelig med større en ny størrelse på teksten*/
+        padding-left: 20px; /**/
+        margin-bottom: 20px;
+        margin-top: 60px;
+        white-space: nowrap;
     }
-    .box-indexpage-footer {
-        flex: 1 1 100%;
-        width: 100%;
+
+    .box-1a-indexpage-footer,
+    .box-5b-indexpage-footer {
+        margin: 0; /* Fjerner eventuelle marginer som ikke trengs*/
     }
-}
+
+    .box-4b-indexpage-footer {
+        padding-left: 0; /* Fjerner den store paddingen til venstre som flytter hele boksen bort fra de andre boksene */
+    }
+
+    .box-3b-indexpage-footer a,
+    .box-4b-indexpage-footer a,
+    .box-5b-indexpage-footer a {
+        font-size: 1.1rem; /* Ønskelig med litt større tekst*/
+    }
+
+    .box-5b-indexpage-footer{
+        padding: 20px; /*Finjustering*/
+    }
 
 
-*/
+    }
+
+*{box-sizing: border-box;}
+
+
+
+
+
 
 
 
