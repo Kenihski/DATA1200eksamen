@@ -50,7 +50,7 @@ Inneholder
 /*----- Diverse start-----*/
 /* Kode som generelt fungerer som utgangspunkt eller endringer av utgangspunkt*/
 * {
-    box-sizing: border-box;
+    box-sizing: border-box; /*Setter denne til standard for alle sidene, sørger for at innholdet holder seg innen for kanter*/
 }
 
 header {
@@ -173,6 +173,7 @@ background-color: var(--oslometyellow);
 
 
 /**---------------- Activity page start ----------------**/
+/* Justerer innholdet i activity page*/
 /*
 Inneholder 
 -Flex-box-Activity
@@ -181,6 +182,7 @@ Inneholder
 
 
 /*-----flex-box-Activity start-----*/
+/* Innholdet lager rammeeverket for siden med utgangspunkt i flexbokser*/
 
 .main-activity {
     display: flex; 
@@ -204,11 +206,11 @@ Inneholder
 .flex-sub-container1-hero-activity{
     position: relative;
     flex: 2;
-    background: url(../bilder/Bioingeniør\ pipettering.avif) no-repeat center center/cover;
+    background: url(../bilder/bioingeniør-pipettering.avif) no-repeat center center/cover;
     display: flex;
     align-items: flex-end;
     padding: 20px;
-    min-height: 450px;
+    min-height: 450px; /*Gjør at boksen ikke kolapser*/
     
 }
 
@@ -310,8 +312,8 @@ Inneholder
 
 
 /*-----Bilder Activity start-----*/
+/* Hovedsakelig kode for å manipulere biler eller rammene bildene er i med flex*/
 
-/*herherher*/
 .asidebilderamme-activity{
     background-color: var(--sitegrey);
     border: 10px solid var(--sitegrey);
@@ -340,7 +342,7 @@ Inneholder
  
 }
 
- .column-activity {
+ .bilde-activity {
     float: left;
     width: 100%;
     padding: 10px;
@@ -348,15 +350,15 @@ Inneholder
     background-size: cover;
 }
 
-
 /*slettes?*/
-.row-activity {
+.hovedbilde-activity {
     clear: both;
     display: table;   
 }
 
+
 @media screen and (max-width: 839px) {
-    .column-activity  {
+    .bilde-activity  {
       width: 100%;
     }
 }
@@ -368,6 +370,7 @@ Inneholder
 
 
 /**------------------- Index page start -------------------**/
+/*Justerer innholdet i index-page*/
 /* 
 Inneholder 
 - Flex-box-index 
@@ -379,7 +382,7 @@ tabell med info om programmer, og tabell for videre studiemuligheter
 
 
 /*-----flex-box-index start-----*/
-
+/* Hovedsakelig for rammeverket til index-page med flex-boxer*/
 .main-index h2 {
     margin-left: 0;
     font-size: 1.75rem;
@@ -406,8 +409,9 @@ tabell med info om programmer, og tabell for videre studiemuligheter
     flex: 1;
 }
 
-/* Fant inspirasjon til koden her https://stackoverflow.com/questions/70851848/remove-black-bars-on-both-left-right-sides-of-an-iframe-video */
-/* Kodden blir brukt til å fjerne de sorte rammene fra videoen som oppstår ved bruk av iframe til video*/
+/* Fant inspirasjon til koden her:
+ https://stackoverflow.com/questions/70851848/remove-black-bars-on-both-left-right-sides-of-an-iframe-video */
+/* Koden er mer eller mindre lik som vist av kilden og blir brukt til å fjerne de sorte rammene fra videoen som oppstår ved bruk av iframe til video*/
 .flex-sub-container1-hero-index{
     position: relative;
     padding-bottom: 56.25%; /*Denne fjerner den sorte rammen  og var så spesifikk at det er hovedsakelig denne vi fikk inspirasjon til fra stackoverflow*/
@@ -416,7 +420,6 @@ tabell med info om programmer, og tabell for videre studiemuligheter
     height: auto;  
 }
 
-/* Fant inspirasjon til koden her https://stackoverflow.com/questions/70851848/remove-black-bars-on-both-left-right-sides-of-an-iframe-video */ 
 /* Samme som over, kodden blir brukt til å fjerne de sorte rammene fra videoen som oppstår ved bruk av iframe til video*/ 
 .flex-sub-container1-hero-index iframe{
     width: 100%;
@@ -472,22 +475,19 @@ margin-right: 20%;
 }
 
 /*Sørger for at hovedinnholdet på siden ligger i midten hele tiden*/
-.flex-venstre-column-index {
+.flex-column-index {
     display: flex;
     flex-direction: column;
     flex: 2;
     margin-left: 10vw;
-    margin-right: 10vw;
-
-    
+    margin-right: 10vw; 
 }
 
 .flex-box-index {
     flex: 1;
     margin: 10px;
     align-content: center;
-    justify-content: center;
-    
+    justify-content: center; 
 }
 
 .footer-index {
@@ -590,7 +590,7 @@ margin-right: 20%;
         flex-direction: column;
     }
 
-    .flex-venstre-column-index {
+    .flex-column-index {
         width: 100%;
         margin-left: 0;
         margin-right: 0;
@@ -620,18 +620,17 @@ margin-right: 20%;
 
 
 @media (min-width: 2400px){
-    .flex-venstre-column-index {
+    .flex-column-index {
         margin-left: 5vw;
         margin-right: 5vw;
     }   
 }
 
 @media (min-width: 6000px){
-    .flex-venstre-column-index {
+    .flex-column-index {
         margin-left: 1vw;
         margin-right: 1vw;
     }
-
 }    
 
 .studenthistorier{
@@ -695,10 +694,10 @@ padding-left: 15px;
 
 
 /*-----Bilder index start-----*/
-
+/* Hovedsakelig for å justere bildene på index-page*/
 .oslomet-logo{
     display: flex;
-    background-image: url(../bilder/Logo_of_Oslo_Metropolitan_University.svg);
+    background-image: url(../bilder/logo_of_oslo_metropolitan_university.svg);
     background-size: cover;
     height: 36px;
     width: 61px;
@@ -800,7 +799,8 @@ padding-left: 15px;
 
 
 
-/*-----Tabell med diverse informasjon om studiet start-----*/
+/*-----Tabell index med diverse informasjon om studiet start-----*/
+/* Til tabellen øverst på index-page laget med flex-boxer*/
 
 .container-indexpage-tabelløverst{
     display: flex;
@@ -810,7 +810,6 @@ padding-left: 15px;
     box-sizing: border-box;
 }
 
-
 .box-indexpage-tabelløverst{
     color: var(--oslometblack);
     padding-bottom: 70px;
@@ -818,27 +817,21 @@ padding-left: 15px;
     margin: 10px;
     text-align: left;
     height: 80px;
-    width: calc(25% - 15px); /* Fire bokser på en rad justert fra 20px til 15px!!!!*/
+    width: calc(25% - 15px); /* Ordner fire bokser på en rad*/
     box-sizing: border-box;
     border-top: 1px solid var(--oslometblack);
     word-break: keep-all;
 }
-
-
-
 
 .box-indexpage-tabelløverst h2 {
     margin-bottom: 5px;
     font-size: 18px;
 }
 
-
 .box-indexpage-tabelløverst p {
     margin-top: 0;
     font-size: 16px;
 }
-
-
 
 
 #box1-indexpage-tabelløverst {order: 1; }
@@ -878,6 +871,7 @@ padding-left: 15px;
 
 
 /*-----Hovedtabell index start-----*/
+/*justerer innholdet for hele tabellen med åpne- og lukke-mekanisme*/
 
 .tabellramme-index {
     display: flex;
@@ -893,7 +887,7 @@ padding-left: 15px;
 }
 
 /*Gjør at de små tabellene i hva lærer du? får unike egenskaper i forhold til De store tabellene*/
-.tabellramme-index.tabellramme-index-liten-Hva-Lærer-Du, .tabellramme-index.tabellramme-index-liten-Studiets-oppbygging{
+.tabellramme-index.tabellramme-index-liten-hva-lærer-du, .tabellramme-index.tabellramme-index-liten-studiets-oppbygging{
     border-top: none;
     padding: 0;
     padding-top: 2px;
@@ -917,11 +911,11 @@ padding-left: 15px;
     background-position: center;
     display: inline-block;
     margin-right: 10px;
-    background-image: url(../bilder/Plus_symbol.svg.png.svg) 
+    background-image: url(../bilder/plus_symbol.svg.png.svg) 
 }
 
 /*Gjør at de små tabellene i hva lærer du? får unike egenskaper i forhold til De store tabellene*/
-.knapp-box.knapp-box-Hva-Lærer-Du, .knapp-box.knapp-box-Studiets-oppbygging{
+.knapp-box.knapp-box-hva-lærer-du, .knapp-box.knapp-box-studiets-oppbygging{
     padding: 10px;
 }
 
@@ -941,13 +935,13 @@ padding-left: 15px;
 }
 
 /*Får boksene til å ligge midt på boksene over og mer plass til tabellene i bredden*/
-.gjemt-innhold:checked ~ .hovedinnhold-i-gjeminnhold.hig-Studiets-oppbygging2{
+.gjemt-innhold:checked ~ .hovedinnhold-i-gjeminnhold.hig-studiets-oppbygging2{
     padding-left: 10px;
 }
 
 /*Bytter bakgrunnsbilde fra pluss til minus når man klikker/åpner boksen*/
 .gjemt-innhold:checked ~ .knapp-og-hovedtabell-overskrift-boks .knapp-box {
-    background-image: url(../bilder/Minus_symbol.svg.png.svg);
+    background-image: url(../bilder/minus_symbol.svg.png.svg);
 
 }
 
@@ -979,23 +973,23 @@ padding-left: 15px;
     .gjemt-innhold:checked ~ .hovedinnhold-i-gjeminnhold {
         padding-left: 50px;
     }
-    .gjemt-innhold:checked ~ .hovedinnhold-i-gjeminnhold-Hva-Lærer-Du-hovedramme-2{
+    .gjemt-innhold:checked ~ .hovedinnhold-i-gjeminnhold-hva-lærer-du-hovedramme-2{
         padding-left:0;
     }
-    .gjemt-innhold:checked ~ .hovedinnhold-i-gjeminnhold.hig-Studiets-oppbygging2{
+    .gjemt-innhold:checked ~ .hovedinnhold-i-gjeminnhold.hig-studiets-oppbygging2{
         padding-left:0;
     }
 
 }
 
 /*Gjør at de små tabellene i hva lærer du? får unike egenskaper i forhold til De store tabellene*/
-.gjemt-innhold:checked ~ .hovedinnhold-i-gjeminnhold-Hva-Lærer-Du {
+.gjemt-innhold:checked ~ .hovedinnhold-i-gjeminnhold-hva-lærer-du {
     padding-left: 50px;
     margin-top: 0;   
 }
 
 /*Gjør at tabellene får mer plass i bredden*/
-.gjemt-innhold:checked ~ .Studiets-oppbygging-gjeminnhold {
+.gjemt-innhold:checked ~ .studiets-oppbygging-gjeminnhold {
     padding-left: 0; 
 }
 
@@ -1009,6 +1003,7 @@ padding-left: 15px;
 
 /*----- Index Studiested, Spørsmål om utdanningen?, faglig leder, tabell 
 med info om programmer, og tabell for videre studiemuligheter start-----*/
+/*mye av koden er sammlet for å ikke skrive like kode flere ganger*/
 
 /*---Studiested start---*/
 .studiested-overskrift a, .spørsmål-om-utdanningen-overskrift a{
@@ -1032,7 +1027,6 @@ med info om programmer, og tabell for videre studiemuligheter start-----*/
 }
 /*---Studiested slutt---*/
 
-/*herherher*/
 /*---faglig leder start---*/
 .faglig-leder-container{
     display: flex;
@@ -1169,6 +1163,7 @@ Dette gir en illusjon av at alle boksene har en linje øverst og nederst*/
     flex-wrap: wrap; /*Lar boksene bryte når det zoomes inn sånn at pilen forblir i bilde*/
 }
 
+
 .info-box, .info-fl-box {
     flex: 1;
     flex-shrink: 1;
@@ -1179,7 +1174,7 @@ Dette gir en illusjon av at alle boksene har en linje øverst og nederst*/
     font-size: small;
     white-space: nowrap; /*Sørger for at innholdet holder seg på en linje*/
     padding-right: 10px; 
-    padding-left: 10px;  
+    padding-left: 10px; 
 }
 
 .info-box:first-child, .info-fl-box:first-child{
@@ -1189,7 +1184,6 @@ Dette gir en illusjon av at alle boksene har en linje øverst og nederst*/
 .info-box:nth-child(4) , .info-fl-box:last-child{
     border-right:none;
 }
-
 
 
 .ulike-programmer{
@@ -1211,6 +1205,7 @@ Dette gir en illusjon av at alle boksene har en linje øverst og nederst*/
     height: 12px;
     width: 12px;
     margin-right: 15px;
+    flex-shrink: 0; /*Denne hindrer pilen i å krympe*/
     transition: transform 0.2s ease; /*Sørger for at pilen flytter seg gjevnt og ikke med et "klikk"*/
 }
 
