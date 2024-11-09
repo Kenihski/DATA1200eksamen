@@ -57,7 +57,7 @@ Inneholder
 header {
     background-color: var(--siteblue);
     line-height: 0.5rem;
-    font-size: 1rem;
+    font-size: 1em;
     padding: 0.5rem;
 
 }
@@ -72,8 +72,6 @@ body {
     box-sizing: border-box;
     font-size: 1rem;
 }
-
-
 
 .menu a{
     /*text-decoration: none;*/ /*FJERN HVIS DET UNDER BLIR*/
@@ -90,8 +88,9 @@ body {
 
 /*----- Hamburgermeny start -----*/
 /* Koden som danner menyen i header på alle sider, denne er inspirert og modifert fra pensum*/
-#burger-toggle {display: none;}
 
+/*Skjult som standard, blir synlig ved små skjermer/mobil*/
+#burger-toggle {display: none;}
 @media (min-width:901px) {
     .menu{
         display: flex;
@@ -99,13 +98,11 @@ body {
         justify-content: center;
         list-style-type: none;
     }
-    
     .menu Li {padding-right: 4rem;}
-
 }
 
+/*Til hamburgermeny-ikonet som blir synlig ved små skjermer/mobil*/
 @media (max-width: 900px) {
-       
     /*Justify-content: flex-end gjør at hele nav-baren med menyen ligger på høyre siden sånn som på OsloMet sin side*/
     nav {
         display: flex;
@@ -264,13 +261,15 @@ Inneholder
 }
 
 
-
+/* slettes ? gjør ikke noe når den under står
 @media (max-width: 839px) {
     .flex-container-activity {
         padding: 5%;
     }
 }
+*/
 
+/*For små skjermer/molbil - gjør at innholdet får mer plass og det blir mindre kanter, samt at hero tar mindre plass*/
 @media (max-width: 839px) {
     .flex-container-activity{
         padding: 2%;
@@ -289,6 +288,7 @@ Inneholder
     }
 }
 
+/*Mindre padding ved større skjermer*/
 @media (min-width: 840px) {
     .flex-container-activity {
         padding: 1%;
@@ -300,7 +300,7 @@ Inneholder
         flex:0;    
     }
     .flex-sub-container1-hero-activity{
-         flex: 0;
+        flex: 0;
     }
     .main-activity{
         justify-content: flex-start;
@@ -357,12 +357,13 @@ Inneholder
     display: table;   
 }
 
-
-@media screen and (max-width: 839px) {
+/*slettes?*/
+@media (max-width: 839px) {
     .bilde-activity  {
       width: 100%;
     }
 }
+
 
 /*-----Bilder Activity slutt-----*/
 
@@ -482,6 +483,7 @@ margin-left: 20%;
 margin-right: 20%;  
 }
 
+/*Får teksten til å ta opp mer plass i bredden ved mobil/små skjermer*/
 @media (max-width: 839px) {
     .flex-index-teksts-oppe p {
         margin-left: 0%;
@@ -583,7 +585,6 @@ margin-right: 20%;
     .header-over{
         padding-bottom: 10px;
     }
-
 }
 
 @media (min-width: 840px) {
@@ -605,19 +606,16 @@ margin-right: 20%;
     .studieoversikt-lenke{
         padding: 0 20px;
         margin: 0 auto; 
-    }
-    
+    }  
 }
 
 @media (max-width: 839px) {
     .flex-container-index{
         padding: 2%;
     }
-
     .flex-sub-container2-index {
         flex-direction: column;
     }
-
     .flex-column-index {
         width: 100%;
         margin-left: 0;
@@ -636,8 +634,6 @@ margin-right: 20%;
     .flex-container-index{
         flex:0;    
     }
-
-    
     .flex-sub-container1-hero-index{
          flex: 0;
     }
@@ -693,6 +689,7 @@ padding-left: 15px;
     color: var(--oslometblack);
 }
 
+/*Tar mer plass i bredden ved mobil/liten skjerm*/
 @media (max-width: 839px) {
     .flex-studenthistorier{
         margin-right: 0%;
@@ -751,8 +748,7 @@ padding-left: 15px;
         justify-content: flex-start;
         position: absolute;
         left: 10px;
-        margin-left: 0;
-        
+        margin-left: 0;  
     }
 
     .oslomet-logo-wrapper  {
@@ -802,15 +798,14 @@ padding-left: 15px;
 }
 
 .fibni1 {
-    order: 1; /*Gjør at boksen med tekst legger seg under ved kolonne*/
+    order: 1; /*Gjør at boksen med tekst liger til venstre i row og legger seg under ved endre order ved kolonne*/
 }
-
 .fibni2{
-    order: 2;  /*Gjør at boksen med bilde ligger seg på topp ved kolonne*/
+    order: 2;  /*Gjør at boksen med bilde ligger til høyre ved row og legger seg på topp ved kolonne*/
 }
 
 .fibni2:hover img{
-    transform: scale(1.2); /*Zoomer inn bilde ved hover*/
+    transform: scale(1.2); /*Zoomer inn bilde 20% ved hover*/
 }
 
 .lenke-boks-fibnil{
@@ -822,10 +817,10 @@ padding-left: 15px;
         flex-direction: column;
     }
     .fibni1 {
-        order: 2;
+        order: 2; /*Endret order ved kolonne ved liten skjerm som nevnt over*/
     }
     .fibni2{
-        order: 1;
+        order: 1; /*Endret order ved kolonne ved liten skjerm som nevnt over*/
     }
 }
 /*-----Bilder index slutt-----*/
@@ -862,17 +857,16 @@ padding-left: 15px;
         padding-bottom: 0px;
         padding-top: 20px;
     }
-
 }
 
 .box-indexpage-tabelløverst h2 {
     margin-bottom: 5px;
-    font-size: 18px;
+    font-size: 1.1rem;
 }
 
 .box-indexpage-tabelløverst p {
     margin-top: 0;
-    font-size: 16px;
+    font-size: 1em;
 }
 
 
@@ -987,9 +981,9 @@ padding-left: 15px;
 
 }
 
+/*Skjult som standard, synlig ved checked*/
 .hovedinnhold-i-gjeminnhold {
     display: none;
-
 }
 
 .hovedinnhold-i-gjeminnhold a{
@@ -1021,7 +1015,6 @@ padding-left: 15px;
     .gjemt-innhold:checked ~ .hovedinnhold-i-gjeminnhold.hig-studiets-oppbygging2{
         padding-left:0;
     }
-
 }
 
 /*Gjør at de små tabellene i hva lærer du? får unike egenskaper i forhold til De store tabellene*/
@@ -1035,6 +1028,7 @@ padding-left: 15px;
     padding-left: 0; 
 }
 
+/*Skjult som standard*/
 .gjemt-innhold {
     display: none;
 }
@@ -1186,7 +1180,6 @@ Dette gir en illusjon av at alle boksene har en linje øverst og nederst*/
     .ulike-programmer.videre-muligheter-siste-mlinje p{
        font-size: 0.9rem;
     }
-
 }
 
 .ulike-programmer p, .faglig-leder p{
