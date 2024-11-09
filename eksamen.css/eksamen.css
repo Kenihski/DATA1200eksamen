@@ -16,7 +16,8 @@ Index page
 - Bilder index 
 - Tabell med diverse informasjon om studiet
 - Hovedtabell index
-- Index Studiested, Spørsmål om utdanningen?, faglig leder, tabell med info om programmer, og tabell for videre studiemuligheter
+- Index Studiested, Spørsmål om utdanningen?, faglig leder, 
+  tabell med info om programmer, og tabell for videre studiemuligheter
 
 Innhold slutt --*/
 
@@ -206,7 +207,7 @@ Inneholder
 .flex-sub-container1-hero-activity{
     position: relative;
     flex: 2;
-    background: url(../bilder/bioingeniør-pipettering.avif) no-repeat center center/cover;
+    background: url(../bilder/bioingeniør_pipettering.avif) no-repeat center center/cover;
     display: flex;
     align-items: flex-end;
     padding: 20px;
@@ -381,8 +382,22 @@ tabell med info om programmer, og tabell for videre studiemuligheter
 */
 
 
+
 /*-----flex-box-index start-----*/
+
 /* Hovedsakelig for rammeverket til index-page med flex-boxer*/
+/* 
+Inneholder 
+-hero index
+-hovedoverskrift og tekst oppe index 
+-hovedinnhold, header og studieoversikt
+-studenthistorier index
+*/
+
+
+/* ---Studenthistorier index start---*/
+
+
 .main-index h2 {
     margin-left: 0;
     font-size: 1.75rem;
@@ -397,6 +412,7 @@ tabell med info om programmer, og tabell for videre studiemuligheter
     color: var(--oslometblack);
 }   
 
+/* ---hero index start--- */
 /*max-with 1200px brukes som standard på denne siden for å ha innholdet sentrert på midten*/
 .flex-container-index {
     display: flex;
@@ -430,11 +446,20 @@ tabell med info om programmer, og tabell for videre studiemuligheter
     left: 0;
 }
 
+/* ---hero index slutt--- */
+
+/* ---hovedoverskrift og tekst oppe index start--- */
+
 .flex-index-hovedoverskrift{
     margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 1.5rem; 
-    
+    margin-bottom: 20px;    
+}
+
+/*Bevarer mindre h1 på litenskjerm/molbil og gir større ved større skjerm*/
+@media (min-width:701px) {
+    .flex-index-hovedoverskrift{
+        font-size: 1.5rem;  
+    }
 }
 
 .flex-index-teksts-oppe{
@@ -467,6 +492,9 @@ margin-right: 20%;
     }
 }
 
+/* ---hovedoverskrift og tekst oppe index slutt--- */
+
+/* ---hovedinnhold, header og studieoversikt index start--- */
 
 .flex-sub-container2-index {
     display: flex;
@@ -633,6 +661,10 @@ margin-right: 20%;
     }
 }    
 
+/* ---hovedinnhold, header og studieoversikt index slutt--- */
+
+/* ---Studenthistorier index start---*/
+
 .studenthistorier{
     font-size: 1.8em; 
 }
@@ -688,6 +720,7 @@ padding-left: 15px;
 .lenke-boks-studenthistorier:hover .flex-studenthistorier {
     background-color:  rgb(224, 195, 2);
 }
+/* ---Studenthistorier index slutt---*/
 
 /*-----flex-box-index slutt-----*/
 
@@ -821,6 +854,15 @@ padding-left: 15px;
     box-sizing: border-box;
     border-top: 1px solid var(--oslometblack);
     word-break: keep-all;
+}
+
+/* GJør at boksene i tabellen tar opp mindre plass i høyden ved mobil/liten skjerm*/
+@media (max-width: 700px) {
+    .box-indexpage-tabelløverst{
+        padding-bottom: 0px;
+        padding-top: 20px;
+    }
+
 }
 
 .box-indexpage-tabelløverst h2 {
@@ -1171,7 +1213,7 @@ Dette gir en illusjon av at alle boksene har en linje øverst og nederst*/
     text-align:center;
     flex-direction: row;
     border-right: solid 1px var(--oslometblack);
-    font-size: small;
+    font-size: 0.8em;
     white-space: nowrap; /*Sørger for at innholdet holder seg på en linje*/
     padding-right: 10px; 
     padding-left: 10px; 
