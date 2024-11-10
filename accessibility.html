@@ -37,7 +37,7 @@
 
             <div class="flex-sub-container2-activity">
                 <article class="flex-venstre-column-activity">
-                    <section class="flex-box-activity">
+                    <section class="flex-box-activity accessibility">
                         
                         <p>Økt accessibility eller «tilgjengelighet» i forbindelse med ikt er lovpålagt i Norge og 
                             handler om at ikt-løsninger som nettsider og annet skal være tilgjengelig for alle, 
@@ -45,20 +45,25 @@
 
                         <p>Vi har derfor prøvd å implementere en rekke løsninger for å øke accessibility i størst mulig grad.</p>
 
-                        <li>I HTML-dokumentet har vi brukt overskrifter der det er naturlig, og ved rikig rekkefølge 
+                        <li>I HTML-dokumentet har vi brukt overskrifter der det er naturlig (eksempel i bilde under), og ved rikig rekkefølge 
                             uten å hoppe over noen av nivåene. Dette er viktig for at skjermlesere skal kunne forstå 
                             innholdet og for at man naturlig kan hoppe ved behov.</li>
 
+                            <img src="./bilder/eksempel_overskrift.jpg" alt="" width="100%">   
+
                         <li>Lagt til språk med  lang-attributtene i html-dokumentet. 
                             Dette hjelper søkemotoren å bestemme språk og relevans.</li>
+ 
 
                         <li>Brukt farger som ikke blender inn i hverandre, slik at de har grei kontrast. Dette er viktig for 
                             det rent visuelle. Svaksynte/de med redusert syn eller fargeblinde kan ha vanskeligheter med 
                             å se/lese innholdet når fargene ikke har god nok kontrast.</li>
 
-                        <li>Beskrevet alle bilder med alt-attributter. Dette er både fint når bilde av en aller annen grunn 
+                        <li>Beskrevet alle bilder med alt-attributter (eksempel i bilde under). Dette er både fint når bilde av en aller annen grunn 
                             ikke lastes inn, men også ved bruk av skjermleser hvor bilde blir «lest opp» for 
                             at bruker skal kunne forstå hva som står der.</li>
+
+                            <img src="./bilder/eksempel_alt.jpg" alt="" width="100%">  
 
                         <li>Markere lenker med en underlinje der det er naturlig. Dette gjør det lettere å se lenken for svaksynte.</li>
 
@@ -66,24 +71,29 @@
                             Vi har beholdt fargeendringen på activity-page av denne grunn, mens på index-page prøve vi å etterligne orginalsiden i mest mulig grad, og 
                             den ble derfor ofte fjernet.</li>
 
-                        <li>Tittel på lenker. Dette er også nyttig for skjermlesere ved synshemning. Vi har derfor unngått å skrive «les mer» i tittelen, for at 
+    
+                        <li>Tittel på lenker (eksempel i bilde under). Dette er også nyttig for skjermlesere ved synshemning. Vi har derfor unngått å skrive «les mer» i tittelen, for at 
                             skjermleser ikke skal få mange av de på rad uten kontekst.</li>
 
-                        <li>Benytte semantiske elementer fra html 5/css3 etter beste emne. For å unngå å bare bruke div. har vi inkludert semantiske elementer som main, article, section osv. Det gjør koden mer 
+                            <img src="./bilder/eksempel_tittel.jpg" alt="" width="100%">  
+
+                        <li>Benytte semantiske elementer fra html 5/css3 etter beste emne. For å unngå å bare bruke div. har vi inkludert semantiske elementer som main, article, section osv (eksempel i øverste bilde). Det gjør koden mer 
                             oppdatert og gir en bedre lesbarhet i selve koden, samtidig som det øker accessibility for skjermlesere.</li>
                     
                         <p>Etter å ha gjort et helhjertet forsøk på å øke accessibility som beskrevet over, var det på tide å teste koden gjennom «lighthouse» 
                         sin «accessibility-test». Testen kan ikke plukke opp alt, og anbefaler derfor også å ta en manuell sjekk.</p>
 
                         <p>Samtlige sider ble testet og de mindre komplekse sidene (accessibility-page, github-page og til og med activity-page) kom godt ut av testen 
-                        med en score på 100 som vist under. Det var derfor ikke mye å plukke i her, selv etter en manuell vurdering.</p>
+                        med en score på 100. Det var derfor ikke mye å plukke i her, selv etter en manuell vurdering som beskrevet over.</p>
 
-                        <img src="./bilder/lighthouse_score_andre.jpg" alt="Lighhouse score for mindre komplekse sider" width="100%">
+                        <p>Deretter testet vi på index-page. Hvor vi fikk en score på 93 etter første runde. Vi fikk et forslag på forbedringer som gjorde at vi 
+                            la til tittel på videoen på toppen under «flex-sub-container1-hero-index» (bilde under). Dette for å hjelpe skjermlesere, til å beskrive innholdet.</p>
 
-                        <p>Deretter testet vi på index-page. Hvor vi fikk en score på 93 (bilde nede venstre) etter første runde. Vi fikk et forslag på forbedringer som gjorde at vi la til tittel på videoen på toppen under «flex-sub-container1-hero-index». Dette for å hjelpe skjermlesere, 
-                        til å beskrive innholdet. Det krevdes ikke flere endringer til for at vi så fikk en ny score på 100 (bilde nede høyre). </p>
+                        <img src="./bilder/eksempel_video.jpg" alt="" width="100%">  
      
-                        <img src="./bilder/lighthouse_score_index.jpg" alt="Lighhouse score for index" width="100%">
+                        <p>Det krevdes ikke flere endringer til for at vi så fikk en ny score på 100 (bilde under).</p>
+
+                        <img src="./bilder/lighthouse_score.jpg" alt="Lighhouse score" width="100%">
       
 
                     </section>

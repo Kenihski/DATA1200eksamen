@@ -64,6 +64,14 @@ Inneholder
     font-size: 2.2rem;
 }
 
+.flex-box-activity.accessibility img{
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
 /*---accessibility-page start---*/
 
 /*----- Diverse start-----*/
