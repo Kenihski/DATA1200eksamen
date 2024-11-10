@@ -46,7 +46,25 @@ Inneholder
 
 /*-----Root slutt-----*/
 
+/*---accessibility-page start---*/
+/*Koden er basert på den fra activity-page men noen få justering ved hjelp av dobbel-klasser*/
 
+.flex-sub-container1-hero-activity.accessibility{
+    background:none;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-height: 0px;
+}
+
+.overskrift-activity.accessibility {
+    color: var(--oslometblack);
+    background-color: white;
+    padding: 0;
+    font-size: 2.2rem;
+}
+
+/*---accessibility-page start---*/
 
 /*----- Diverse start-----*/
 /* Kode som generelt fungerer som utgangspunkt eller endringer av utgangspunkt*/
@@ -200,7 +218,7 @@ Inneholder
     margin: 0 auto;
     flex: 1;
 }
-
+/*Bilde - kilde:https://www.shutterstock.com/nb/image-photo/young-expert-medical-technologist-working-by-1826811668 fotograf:shutterstock*/
 .flex-sub-container1-hero-activity{
     position: relative;
     flex: 2;
@@ -931,12 +949,15 @@ padding-left: 15px;
 
 }
 
+/*Er også med på å gjøre hele boksen med tekst klikkbar*/
 .knapp-og-hovedtabell-overskrift-boks{
     display: flex;
     flex-direction: row;
     align-items: center;
     width: 100%;
-
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer; /*gir pointer på hele*/
 }
 
 .knapp-box {
@@ -967,7 +988,16 @@ padding-left: 15px;
 
 .hovedtabell-overskrift-box-index{
     padding-left: 20px;
-    flex: 1;
+    flex: 1; 
+}
+
+.hovedtabell-overskrift-box-index h2{
+    font-size: 1em;
+}
+
+.hovedtabell-overskrift-box-index h3{
+    font-size: 1em;
+    margin-left: 0;
 }
 
 /*Får boksene til å ligge midt på boksene over og mer plass til tabellene i bredden*/
@@ -1094,6 +1124,11 @@ med info om programmer, og tabell for videre studiemuligheter start-----*/
     flex-direction: column;
     justify-content: center;
     flex: 1;
+    margin-top: 15px;
+}
+
+.faglig-leder p {
+    margin: 0;
 }
 
 /*Gjør innholdet om til row fra kolonne ved mindre skjerm eller zoomet godt inn. Men ikke før det trengs derfor lav px*/
@@ -1109,6 +1144,9 @@ med info om programmer, og tabell for videre studiemuligheter start-----*/
     .faglig-leder-container{
         justify-content: space-between; 
         align-items: center;
+    }
+    .faglig-leder{
+        margin-top: 0; 
     }
     .faglig-leder p{
         margin-top: 0; 
@@ -1182,7 +1220,11 @@ Dette gir en illusjon av at alle boksene har en linje øverst og nederst*/
     }
 }
 
-.ulike-programmer p, .faglig-leder p{
+.hoved-ulike-programmer h3{
+    margin-left: 0;
+}
+
+.ulike-programmer p, .hoved-ulike-programmer h3, .faglig-leder p{
     font-size: 1.1rem;
     cursor: pointer;
     margin-bottom: 5px;
