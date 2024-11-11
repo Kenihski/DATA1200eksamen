@@ -23,7 +23,39 @@ Innhold slutt --*/
 
 
 /** Ahmed legg in koden din i ccs her start **/
+.Studieår{
+    /*bruker denne for å få bakgrunnsfarge grå*/
+    background-color: grey;
+}
 
+.container{
+    /*bruker denne for at tabellen ikke skal ta mer enn 80% av skjermen*/
+    max-width: 800px;
+    /*bruker denne for at tabellen skal like store marginer på siden av tabellen*/
+    margin: 20px auto;
+}
+.emnetittel{
+    /*bruker denne for å få en underlinje som jeg kan farge gult*/
+    text-decoration: underline;
+    /*bruker denne for å få svart skrift*/
+    color: black;
+    /*bruker denne for å få tykk skrift*/
+    font-weight: bold;
+    /*bruker denne for å få gul underlinje*/
+    text-decoration-color: rgb(248, 248, 2);
+}
+
+.data{
+    /*brukker denne for å ha en border over table data*/
+    border-top: 1px solid;
+    /* bruker padding for å lage litt rom mellom border-top og innhold i td*/
+    padding: 10px;
+    
+}
+.tabell{
+    /*bruker denne kommando for at cellene og border-toppen skal dekke hele området */
+    width: 100%;
+}
 
 
 
