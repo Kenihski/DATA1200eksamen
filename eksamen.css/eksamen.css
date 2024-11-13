@@ -1301,12 +1301,197 @@ med info om programmer, og tabell for videre studiemuligheter slutt-----*/
 
 
 
+
+
 /*----- Footer index start -----*/
 
 
+/* Her settes bakgrunnsfargen for hele footer-elementet: */
+.footer-indexpage {
+    background-color: rgb(255, 220, 0);
+}
+
+/* Denne koden sikrer at "container-a" og "container-b" ligger i en kolonne/vertikalt: */
+.container-footer-indexpage {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Sikrer at containeren fyller ut hele plassen den får tildelt*/
+} 
 
 
+.container-a-indexpage-footer {
+    width: 100%; /* Sikrer at elementet strekker seg over den hele tilgjengelige bredden */
+    max-width: 1200px; /*Sikrer at overskriften og "Abonner på nyhetsbrev!"-knappen holder seg innenfor en maksimal bredde */
+    min-height: 155px;
+    padding: 0 20px; /* Legger til litt padding på høyre og venstre side */
+    margin: 0 auto; /* Sentrerer elementet horisontalt innenfor sitt forelder-element */
+    display: flex;
+    justify-content: center; /* Justerer flex-elementene i midten av flex-containeren horisontalt */
+    align-items: center; /* Justerer flex-elementene i midten av flex-containeren vertikalt */
+}
 
+
+/* En seperat boks definert for en helt egen skille-linje, slik at den oppfører seg annerledes fra resten (strekker seg langs hele footeren)*/
+.box-linje-indexpage-footer {
+    border-top: 1px solid rgb(0, 0, 0);
+    width: auto;
+}
+
+.box-1a-indexpage-footer {
+    font-size: 1.4rem;
+    margin-left: 50px;
+    margin-right: 140px;
+}
+
+
+/* Den sorte "Abonner på nyhet" knappen: */
+.box-2a-indexpage-footer {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    padding-left: 20px;
+    padding-right: 20px; /* padding-left og right sikrer et lite mellomrom på sidene */
+    padding-top: 3px;
+    padding-bottom: 3px; /* padding-top og bottom sikrer et lite mellomnrom over og under */
+    white-space: nowrap; /* sikrer at teksten i elementet ikke brytes til en ny linje */
+    margin-right: 50px;
+}
+/* Lenken til "Abonner på vårt nyhetsbrev: */ 
+.lenke-til-box-2a-indexpage-footer {
+    text-decoration: none; /* fjerner lilla strek under teksten*/
+}
+
+
+.container-b-indexpage-footer {
+    width: 100%;
+    max-width: 1200px; /*Samme maksimal bredde som satt i container-a*/
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; /*sikrer at elementene i container-b plasseres med lik avstand mellom seg, slik at innholdet er jevnt fordelt.*/
+    padding-top: 60px;
+    padding-bottom: 60px; /*sikrer litt mellomrom både over og under elementene i denne containeren*/
+}
+
+
+/* Her defineres stilen/utseende for alle lenkene i container-b: */
+.box-3b-indexpage-footer a,
+.box-4b-indexpage-footer a,
+.box-5b-indexpage-footer a {
+    color : rgb(0,0,0); /* Setter fargen på lenkene til sort */
+    text-decoration: none; /* Fjerner standard understreking */
+}
+
+/* Her defineres stilen/utseende for lenkene i container-b når mus-pilen holdes over: */
+.box-3b-indexpage-footer a:hover,
+.box-4b-indexpage-footer a:hover,
+.box-5b-indexpage-footer a:hover {
+    text-decoration: underline; /* Legger til understreking når mus-pilen føres på teksten*/
+    text-decoration-thickness: 2px; /* Setter tykkelsen på understrekingen */
+}
+
+
+.box-3b-indexpage-footer {
+    margin-left: 50px; /* samme margin-left som box-1a (se over), slik at det ser ryddigere ut*/
+}
+
+
+.box-4b-indexpage-footer {
+    line-height: 15px; /* Justerer linjehøyden for å gjøre teksten mer kompakt */
+    padding-left: 100px;
+    padding-top: 20px;
+}
+.box-4b-indexpage-footer a {
+    display: block; /* Sørger for at lenkene vises på nye linje */
+    font-size: 0.81rem;
+}
+
+
+.box-5b-indexpage-footer {
+    margin-right: 150px;
+    margin-left: 40px;
+    margin-top: 20px;
+    min-width: 130px; /*Sørger for at teksten ikke bryter ned på neste linje når bredden minskes*/
+
+}
+
+
+/* Her ordnes logoen for de ulike sosiale medier*/
+.logo-facebook-lenke-footer-index,
+.logo-twitter-lenke-footer-index,
+.logo-linkedin-lenke-footer-index,
+.logo-instagram-lenke-footer-index {
+    display: inline-block;
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+    flex-shrink: 0;
+    background-color: rgb(255, 220, 0);
+    margin-right: 3px;
+    vertical-align: middle; /* Plasserer teksten penere i forhold til logoene*/
+}
+.logo-facebook-lenke-footer-index {
+    background-image: url(../bilder/facebook.png);
+}
+.logo-twitter-lenke-footer-index {
+    background-image: url(../bilder/twitter.png);
+}
+.logo-linkedin-lenke-footer-index {
+    background-image: url(../bilder/linkedin.png);
+}
+.logo-instagram-lenke-footer-index {
+    background-image: url(../bilder/instagram.svg);
+}
+
+
+/* Her er koden for når bredden til skjermen er mindre enn 839px:*/
+@media (max-width: 839px){
+    .container-a-indexpage-footer,
+    .container-b-indexpage-footer {
+        display: flex;
+        flex-direction: column; /* Endrer retningen på elementene i hver container, slik at alt legges i en kolonne når bredden er under 839px*/
+        align-items: flex-start; /* Legger boksene inntil venstre side */
+    }    
+
+    .box-1a-indexpage-footer,
+    .box-2a-indexpage-footer,
+    .box-3b-indexpage-footer,
+    .box-4b-indexpage-footer,
+    .box-5b-indexpage-footer {
+        margin-left: 20px; /* Justerer margin til venstre for alle boksene */
+        margin-bottom: 30px; /* En liten avstand mellom alle boksene i kolonnen */
+    }
+
+
+    .box-1a-indexpage-footer h2 {
+        font-size: 1.8rem; /* Ønskelig med større størrelse på overskriften*/
+        padding-left: 20px;
+        margin-bottom: 20px;
+        margin-top: 60px;
+        word-break: break-word; /*Overskriften skal kunne brytes når bredden minskes*/
+    }
+
+    .box-1a-indexpage-footer,
+    .box-5b-indexpage-footer {
+        margin: 0; /* Fjerner eventuelle marginer som ikke trengs*/
+    }
+
+    .box-4b-indexpage-footer {
+        padding-left: 0; /* Fjerner den store paddingen til venstre som flytter hele boksen bort fra de andre boksene */
+    }
+
+    .box-3b-indexpage-footer a,
+    .box-4b-indexpage-footer a,
+    .box-5b-indexpage-footer a {
+        font-size: 1.1rem; /* Ønskelig med litt større tekst*/
+    }
+
+    .box-5b-indexpage-footer{
+        padding: 20px; /*Finjustering*/
+    }
+    }
+
+*{box-sizing: border-box;}
 
 /*----- Footer index slutt -----*/
 
