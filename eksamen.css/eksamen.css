@@ -1392,6 +1392,9 @@ med info om programmer, og tabell for videre studiemuligheter slutt-----*/
     text-decoration-thickness: 2px; /* Setter tykkelsen på understrekingen */
 }
 
+.box-4b-indexpage-footer a{
+    padding-bottom: 15px;
+}
 
 .box-3b-indexpage-footer {
     margin-left: 50px; /* samme margin-left som box-1a (se over), slik at det ser ryddigere ut*/
