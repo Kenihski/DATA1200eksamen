@@ -310,7 +310,10 @@ body{
 .tabell-studieplan-indexpage td{
     text-align: left; /* For at teksten i tabellen skal stå inntil venstre side*/
 }
-
+.tabell-studieplan-indexpage td.studiepoeng-studieplan-indexpage{
+    text-align: center; /*??????????? Få SP overskriften til å stille seg i midten*/
+    vertical-align: middle;
+}
 
 
 
