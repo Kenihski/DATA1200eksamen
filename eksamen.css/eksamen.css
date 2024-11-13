@@ -1308,7 +1308,7 @@ med info om programmer, og tabell for videre studiemuligheter slutt-----*/
 
 /* Her settes bakgrunnsfargen for hele footer-elementet: */
 .footer-indexpage {
-    background-color: rgb(255, 220, 0);
+    background-color: var(--oslometyellow);
 }
 
 /* Denne koden sikrer at "container-a" og "container-b" ligger i en kolonne/vertikalt: */
