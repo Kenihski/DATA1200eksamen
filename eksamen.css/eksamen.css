@@ -547,11 +547,6 @@ margin-right: 20%;
     justify-content: center; 
 }
 
-.footer-index {
-    background-color: var(--oslometyellow);  
-    padding: 1.5em;
-}
-
 /*Sørger for at logen og menyen legger seg på en rad istedenfor en kolonne*/
 .header-over{
     display: flex;
@@ -1307,6 +1302,12 @@ med info om programmer, og tabell for videre studiemuligheter slutt-----*/
 
 
 /*----- Footer index start -----*/
+
+.footer-index {
+    background-color: var(--oslometyellow);  
+    padding: 1.5em;
+}
+
 
 
 
