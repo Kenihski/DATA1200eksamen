@@ -1333,7 +1333,7 @@ med info om programmer, og tabell for videre studiemuligheter slutt-----*/
 
 /* En seperat boks definert for en helt egen skille-linje, slik at den oppfører seg annerledes fra resten (strekker seg langs hele footeren)*/
 .box-linje-indexpage-footer {
-    border-top: 1px solid rgb(0, 0, 0);
+    border-top: 1px solid var(--oslometblack);
     width: auto;
 }
 
@@ -1378,7 +1378,7 @@ med info om programmer, og tabell for videre studiemuligheter slutt-----*/
 .box-3b-indexpage-footer a,
 .box-4b-indexpage-footer a,
 .box-5b-indexpage-footer a {
-    color : rgb(0,0,0); /* Setter fargen på lenkene til sort */
+    color : var(--oslometblack); /* Setter fargen på lenkene til sort(oslometblack) */
     text-decoration: none; /* Fjerner standard understreking */
 }
 
@@ -1426,7 +1426,7 @@ med info om programmer, og tabell for videre studiemuligheter slutt-----*/
     height: 40px;
     width: 40px;
     flex-shrink: 0;
-    background-color: rgb(255, 220, 0);
+    background-color: var(--oslometyellow);
     margin-right: 3px;
     vertical-align: middle; /* Plasserer teksten penere i forhold til logoene*/
 }
@@ -1491,7 +1491,7 @@ med info om programmer, og tabell for videre studiemuligheter slutt-----*/
     }
     }
 
-*{box-sizing: border-box;}
+/* *{box-sizing: border-box;} slettes dobbelt opp?*/
 
 /*----- Footer index slutt -----*/
 
