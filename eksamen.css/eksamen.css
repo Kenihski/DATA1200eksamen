@@ -406,6 +406,7 @@ Inneholder
 - Tabell med diverse informasjon om studiet
 - Hovedtabell index og Index Studiested, Spørsmål om utdanningen?, faglig leder, 
 tabell med info om programmer, og tabell for videre studiemuligheter 
+- Footer index
 */
 
 
@@ -415,10 +416,10 @@ tabell med info om programmer, og tabell for videre studiemuligheter
 /* Hovedsakelig for rammeverket til index-page med flex-boxer*/
 /* 
 Inneholder 
--hero index
--hovedoverskrift og tekst oppe index 
--hovedinnhold, header og studieoversikt
--studenthistorier index
+- Hero index
+- Hovedoverskrift og tekst oppe index 
+- Hovedinnhold, header og studieoversikt
+- Studenthistorier index
 */
 
 
@@ -1302,5 +1303,13 @@ Dette gir en illusjon av at alle boksene har en linje øverst og nederst*/
 
 /*----- Index Studiested, Spørsmål om utdanningen?, faglig leder, tabell
 med info om programmer, og tabell for videre studiemuligheter slutt-----*/
+
+
+
+/*----- Footer index start -----*/
+
+
+
+/*----- Footer index slutt -----*/
 
 /**------------------- Index page slutt -------------------**/
