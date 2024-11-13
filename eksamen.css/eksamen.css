@@ -1400,6 +1400,13 @@ med info om programmer, og tabell for videre studiemuligheter slutt-----*/
     margin-left: 50px; /* samme margin-left som box-1a (se over), slik at det ser ryddigere ut*/
 }
 
+.box-3b-indexpage-footer2 p, .box-3b-indexpage-footer3  p{
+    margin: 5px;
+ }
+
+ .box-3b-indexpage-footer2 , .box-3b-indexpage-footer3  {
+    margin-bottom: 20px;
+ }
 
 .box-4b-indexpage-footer {
     line-height: 15px; /* Justerer linjehøyden for å gjøre teksten mer kompakt */
