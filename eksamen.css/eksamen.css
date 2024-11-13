@@ -438,6 +438,7 @@ Inneholder
     min-height: 100vh; 
     padding-top: 10px;
     color: var(--oslometblack);
+    
 }   
 
 /* ---hero index start--- */
@@ -458,7 +459,7 @@ Inneholder
 /* Koden er mer eller mindre lik som vist av kilden og blir brukt til å fjerne de sorte rammene fra videoen som oppstår ved bruk av iframe til video*/
 .flex-sub-container1-hero-index{
     position: relative;
-    padding-bottom: 56.25%; /*Denne fjerner den sorte rammen  og var så spesifikk at det er hovedsakelig denne vi fikk inspirasjon til fra stackoverflow*/
+    padding-bottom: 56.25%; /*Denne fjerner den sorte rammen  og det er hovedsakelig denne vi fikk inspirasjon til fra stackoverflow*/
     overflow: hidden;
     max-width: 100%;
     height: auto;  
@@ -660,7 +661,7 @@ margin-right: 20%;
          flex: 0;
     }
     .main-index{
-        justify-content: flex-start;
+        justify-content: flex-start; /*sørger for at innholdet legger seg på toppen ved små skjermer*/
     }
 }
 
@@ -696,6 +697,7 @@ margin-right: 20%;
     margin: 30px;
     margin-right: 30%;
     margin-left: 30%;
+    margin-bottom: 10%;
     padding: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
