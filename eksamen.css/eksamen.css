@@ -306,7 +306,10 @@ body{
 }
 
 
-
+.tabell-studieplan-indexpage th,
+.tabell-studieplan-indexpage td{
+    text-align: left; /* For at teksten i tabellen skal stå inntil venstre side*/
+}
 
 
 
