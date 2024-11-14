@@ -11,6 +11,8 @@ Activity page
 - Flex-box-Activity 
 - Bilder Activity
 
+Accessibility-page og Github-page
+
 Index page
 - Flex-box-index 
 - Bilder index 
@@ -46,33 +48,6 @@ Inneholder
 
 /*-----Root slutt-----*/
 
-/*---accessibility-page start---*/
-/*Koden er basert på den fra activity-page men noen få justering ved hjelp av dobbel-klasser*/
-
-.flex-sub-container1-hero-activity.accessibility{
-    background:none;
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    min-height: 0px;
-}
-
-.overskrift-activity.accessibility {
-    color: var(--oslometblack);
-    background-color: white;
-    padding: 0;
-    font-size: 2.2rem;
-}
-
-.flex-box-activity.accessibility img{
-    padding-left: 10vw;
-    padding-right: 10vw;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-
-/*---accessibility-page start---*/
 
 /*----- Diverse start-----*/
 /* Kode som generelt fungerer som utgangspunkt eller endringer av utgangspunkt*/
@@ -394,6 +369,45 @@ Inneholder
 /*-----Bilder Activity slutt-----*/
 
 /**---------------- Activity page slutt ----------------**/
+
+
+
+
+/*---Accessibility-page og Github-page start---*/
+/*Koden er basert på den fra activity-page men noen få justering ved hjelp av dobbel-klasser*/
+
+.flex-sub-container1-hero-activity.accessibility, .flex-sub-container1-hero-activity.github{
+    background:none;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-height: 0px;
+}
+
+.overskrift-activity.accessibility, .overskrift-activity.github {
+    color: var(--oslometblack);
+    background-color: white;
+    padding: 0;
+    font-size: 2.2rem;
+}
+
+.flex-box-activity.accessibility img, .flex-box-activity.github img{
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.flex-box-activity.github li{
+    margin-left: 20px;
+}
+
+.flex-box-activity.accessibility h2, .flex-box-activity.github h2, .flex-box-activity.github h3,
+.flex-box-activity.accessibility p, .flex-box-activity.github p{
+    color: var(--oslometblack);
+}
+
+/*---Accessibility-page og Github-page slutt---*/
 
 
 
