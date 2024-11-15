@@ -307,7 +307,20 @@ body{
 
 .tabell-studieplan-indexpage th{
     background-color: rgb(240, 240, 240);
+} /* For å gjøre den øverste raden med overskriftene litt mer grå enn resten av tabellen*/
+
+.tabell-studieplan-indexpage a{
+    color: inherit; /* Får samme farge som forelder-elementet*/
+    text-decoration: none; /* Fjerner understrekingen*/
 }
+
+/* Her defineres stilen til lenkene når mus-pilen holdes over teksten: */
+.tabell-studieplan-indexpage a:hover{
+    text-decoration: underline; /* Legger til understreking*/
+    text-decoration-color: rgb(255,204,0);
+    text-decoration-thickness: 2px; /* Gjør understrekingen litt tykkere*/
+}
+
 
 
 
