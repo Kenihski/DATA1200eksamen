@@ -305,15 +305,22 @@ body{
     width: 100%;
 }
 
+.tabell-studieplan-indexpage th{
+    background-color: rgb(240, 240, 240);
+}
+
+
 
 .tabell-studieplan-indexpage th,
 .tabell-studieplan-indexpage td{
     text-align: left; /* For at teksten i tabellen skal stå inntil venstre side*/
 }
-.tabell-studieplan-indexpage td.studiepoeng-studieplan-indexpage{
-    text-align: center; /*??????????? Få SP overskriften til å stille seg i midten*/
-    vertical-align: middle;
-}
+.tabell-studieplan-indexpage th.tbl-studieplan-indexpage-SP,
+.tabell-studieplan-indexpage td.studiepoeng-studieplan-indexpage {
+    text-align: center;
+} /* For at hele kolonnen med studiepoeng (SP) skal stå i midten og ikke til venstre som resten av tabellen*/
+
+
 
 
 
