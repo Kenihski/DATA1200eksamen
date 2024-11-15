@@ -298,16 +298,29 @@ body{
 
 /* Start tabell studiets oppbygging indexpage*/
 
+/*------Er dette en heading 3????--------*/
+.årstid-semester-studieplan-indexpage{
+    color: rgb(99,102,106); /* Setter en grå farge på teksten hvor det står høst/vår (semester)*/
+}
+
 
 
 .tabell-studieplan-indexpage {
     border-collapse: collapse;
     width: 100%;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .tabell-studieplan-indexpage th{
-    background-color: rgb(240, 240, 240);
-} /* For å gjøre den øverste raden med overskriftene litt mer grå enn resten av tabellen*/
+    background-color: rgb(255,204,0)
+} /* For å gjøre den øverste raden med overskriftene gul*/
+.tabell-studieplan-indexpage tr:nth-child(odd){
+    background-color: rgb(249, 247, 245); /* En veldig lys gråfarge som vil være på radene som er oddetall*/
+}
+
+
+
 
 .tabell-studieplan-indexpage a{
     color: inherit; /* Får samme farge som forelder-elementet*/
@@ -327,16 +340,13 @@ body{
 .tabell-studieplan-indexpage th,
 .tabell-studieplan-indexpage td{
     text-align: left; /* For at teksten i tabellen skal stå inntil venstre side*/
+    border-right: 3px solid rgb(255,255,255); /* For å legge til en hvit border mellom kolonnene*/
 }
-.tabell-studieplan-indexpage th.tbl-studieplan-indexpage-SP,
-.tabell-studieplan-indexpage td.studiepoeng-studieplan-indexpage {
-    text-align: center;
-} /* For at hele kolonnen med studiepoeng (SP) skal stå i midten og ikke til venstre som resten av tabellen*/
-
-
-
-
-
+.tabell-studieplan-indexpage th.tbl-studieplan-indexpage-center-align,
+.tabell-studieplan-indexpage td.studiepoeng-studieplan-indexpage,
+.tabell-studieplan-indexpage td.status-studieplan-indexpage {
+    text-align: center; /* For at begge kolonnene med studiepoeng (SP) og status skal stå i midten og ikke til venstre som resten av tabellen*/
+}
 
 
 
