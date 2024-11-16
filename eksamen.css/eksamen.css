@@ -85,10 +85,9 @@ body {
 }
 
 .menu a{
-    /*text-decoration: none;*/ /*FJERN HVIS DET UNDER BLIR*/
+    text-decoration: none; 
     color: var(--oslometblack);
-    text-decoration-thickness: 2px;
-    white-space: nowrap;
+    white-space: nowrap; /*forhindrer at teksten brytes til ny linje*/
     font-weight: bold;
 }
 
@@ -99,6 +98,14 @@ body {
 
 /*----- Hamburgermeny start -----*/
 /* Koden som danner menyen i header på alle sider, denne er inspirert og modifert fra pensum*/
+
+
+/*Gir underlinje ved hover på menyen ellers står text-decoration: none som std*/
+.lenker-meny:hover{
+text-decoration: underline;
+text-decoration-thickness: 2px;
+}
+
 
 /*Skjult som standard, blir synlig ved små skjermer/mobil*/
 #burger-toggle {display: none;}
