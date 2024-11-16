@@ -41,6 +41,8 @@ Inneholder
 :root {
     --siteblue: rgb(139, 185, 227);
     --sitegrey: rgb(238, 239, 240);
+    --sitegreen: rgb(91, 220, 164);
+    --sitered: rgb(235, 120, 147);
     --oslometyellow: rgb(255,220,0);
     --oslometgrey: rgb(221, 222, 224);
     --oslometblack: #222;
@@ -63,8 +65,16 @@ header {
 
 }
 
-#index-header{
+.index-header{
     background-color: var(--oslometyellow);
+}
+
+.accessibility-header{
+    background-color: var(--sitegreen);
+}
+
+.github-header{
+    background-color: var(--sitered);
 }
 
 body {
@@ -127,10 +137,21 @@ body {
         z-index: 2;
     }
 
-    /*Gjør bakgrunnsfargen som fyller ut tomrommene i "boksen" til OsloMet-gul istedenfor standarden blå*/
+    /*Gjør bakgrunnsfargen som fyller ut tomrommene i "boksen" til menyen for index-page til OsloMet-gul istedenfor standarden blå*/
     #menu-index{
         background-color: var(--oslometyellow); 
     }
+    /*Gjør bakgrunnsfargen som fyller ut tomrommene i "boksen" til menyen for accessibility-page til sitegreen istedenfor standarden blå*/
+    #menu-accessibility{
+        background-color: var(--sitegreen); 
+    }
+
+    /*Gjør bakgrunnsfargen som fyller ut tomrommene i "boksen" til menyen for github-page til sitered istedenfor standarden blå*/
+    #menu-github{
+        background-color: var(--sitered); 
+    }
+
+    /*herherher*/
 
     .menu-icon {
         display: block;
@@ -157,10 +178,21 @@ body {
     background-color: var(--siteblue);
 }
 
-/*Gjør menyen til OsloMet gul istedenfor standardfargen satt til blå*/
+/*Gjør menyen index-page til OsloMet gul istedenfor standardfargen satt til blå*/
 #burger-toggle:checked ~ #menu-index Li{
-background-color: var(--oslometyellow);
+    background-color: var(--oslometyellow);
 }
+
+/*Gjør menyen til accessibility-page til sitegreen istedenfor standardfargen satt til blå*/
+#burger-toggle:checked ~ #menu-accessibility Li{
+    background-color: var(--sitegreen);
+}
+
+/*Gjør menyen til github-page til sitered istedenfor standardfargen satt til blå*/
+#burger-toggle:checked ~ #menu-github Li{
+    background-color: var(--sitered);
+}
+
 
 }
 
@@ -407,6 +439,17 @@ Inneholder
     color: var(--oslometblack);
 }
 
+.footer-accessibility {
+    background-color: var(--sitegreen);  
+    padding: 1.5em;
+}
+
+.footer-github {
+    background-color: var(--sitered);  
+    padding: 1.5em;
+}
+
+
 /*---Accessibility-page og Github-page slutt---*/
 
 
@@ -616,7 +659,7 @@ margin-right: 20%;
     .studieoversikt-lenke{
         padding-left: 0;
     }
-    #index-header{
+    .index-header{
         padding-left: 0;
     }
     .header-over{
@@ -631,7 +674,7 @@ margin-right: 20%;
     .studieoversikt-lenke{
         padding-left: 0;
     }
-    #index-header{
+    .index-header{
         padding-left: 0;
     }
 }
