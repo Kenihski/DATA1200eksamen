@@ -1074,6 +1074,7 @@ padding-left: 15px;
     padding-left: 10px;
 }
 
+
 /*Bytter bakgrunnsbilde fra pluss til minus når man klikker/åpner boksen*/
 .gjemt-innhold:checked ~ .knapp-og-hovedtabell-overskrift-boks .knapp-box {
     background-image: url(../bilder/minus_symbol.svg.png.svg);
@@ -1144,9 +1145,10 @@ padding-left: 15px;
     background-color: rgb(245, 245, 245);
     padding-left: 10px;
 }
-.gråboks-angir-hvilket-år-container-studieplan-indexpage h2{
+.gråboks-angir-hvilket-år-container-studieplan-indexpage h3{
     padding-top: 7px;
     padding-bottom: 7px;
+    margin-left: 0;
 }
 
 .tabell-studieplan-indexpage {
@@ -1155,7 +1157,7 @@ padding-left: 15px;
 }
 
 .tabell-studieplan-indexpage th{
-    background-color: rgb(255,204,0)
+    background-color: var(--oslometyellow);
 } /* For å gjøre den øverste raden med overskriftene gul*/
 .tabell-studieplan-indexpage tr:nth-child(odd){
     background-color: rgb(249, 247, 245); /* En veldig lys gråfarge som vil være på radene som er oddetall*/
@@ -1170,7 +1172,7 @@ padding-left: 15px;
 /* Her defineres stilen til lenkene når mus-pilen holdes over teksten: */
 .tabell-studieplan-indexpage a:hover{
     text-decoration: underline; /* Legger til understreking*/
-    text-decoration-color: rgb(255,204,0);
+    text-decoration-color: var(--oslometyellow);
     text-decoration-thickness: 2px; /* Gjør understrekingen litt tykkere*/
 }
 
