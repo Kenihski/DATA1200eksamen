@@ -351,14 +351,19 @@ body{
     text-align: center; /* For at begge kolonnene med studiepoeng (SP) og status skal stå i midten og ikke til venstre som resten av tabellen*/
 }
 
-
-
-
-
-
-
-
-
+/*Disse setter spesifikk bredde på hver kolonne slik at alle tabellene ser like ut*/
+.tabell-studieplan-indexpage th:nth-child(1), .tabell-studieplan-indexpage td:nth-child(1){
+    width: 20%;
+}
+.tabell-studieplan-indexpage th:nth-child(2), .tabell-studieplan-indexpage td:nth-child(2){
+    width: 60%;
+}
+.tabell-studieplan-indexpage th:nth-child(3), .tabell-studieplan-indexpage td:nth-child(3){
+    width: 10%;
+}
+.tabell-studieplan-indexpage th:nth-child(4), .tabell-studieplan-indexpage td:nth-child(4){
+    width: 10%;
+}
 
 
 
