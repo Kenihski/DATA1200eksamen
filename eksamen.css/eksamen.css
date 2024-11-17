@@ -298,11 +298,6 @@ body{
 
 /* Start tabell studiets oppbygging indexpage*/
 
-/*------Er dette en heading 3????--------*/
-.årstid-semester-studieplan-indexpage{
-    color: rgb(99,102,106); /* Setter en grå farge på teksten hvor det står høst/vår (semester)*/
-}
-
 
 
 .tabell-studieplan-indexpage {
