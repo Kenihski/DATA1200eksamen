@@ -1096,12 +1096,15 @@ padding-left: 15px;
     padding: 10px;
 }
 
+
+
 .gjemt-innhold:checked ~ .hovedinnhold-i-gjeminnhold {
     display: block;
     padding-left: 70px;
     padding-right: 5px;
     color: var(--oslometblack);
-    margin-top: 10px;   
+    margin-top: 10px;  
+    width: 100%; /*Får innholdet til å ta hele bredden*/
 }
 
 /*Gjør at de små tabellene i Hva lærer du tar opp mer plass i bredden ved små skjermer på lik linjene med hovedtabellene*/
