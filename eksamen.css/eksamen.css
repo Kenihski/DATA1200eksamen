@@ -18,6 +18,7 @@ Index page
 - Bilder index 
 - Tabell med diverse informasjon om studiet
 - Hovedtabell index
+- Tabell studiets oppbygging index
 - Index Studiested, Spørsmål om utdanningen?, faglig leder, 
   tabell med info om programmer, og tabell for videre studiemuligheter
 
@@ -467,11 +468,14 @@ Inneholder
 Inneholder 
 - Flex-box-index 
 - Bilder index
-- Tabell med diverse informasjon om studiet
-- Hovedtabell index og Index Studiested, Spørsmål om utdanningen?, faglig leder, 
-tabell med info om programmer, og tabell for videre studiemuligheter 
+- Tabell index med diverse informasjon om studiet
+- Hovedtabell index
+- Tabell studiets oppbygging index
+- Index Studiested, Spørsmål om utdanningen?, faglig leder, 
+  tabell med info om programmer, og tabell for videre studiemuligheter 
 - Footer index
 */
+
 
 
 
@@ -487,8 +491,6 @@ Inneholder
 */
 
 
-/* ---Studenthistorier index start---*/
-
 
 .main-index h2 {
     margin-left: 0;
@@ -501,8 +503,7 @@ Inneholder
     flex-direction: column; 
     min-height: 100vh; 
     padding-top: 10px;
-    color: var(--oslometblack);
-    
+    color: var(--oslometblack); 
 }   
 
 /* ---hero index start--- */
@@ -653,8 +654,6 @@ margin-right: 20%;
     color: var(--oslometblack);
     text-decoration-thickness: 2px;
 }
-
-
 
 
 /* Holder teksten på line med hovedinnhold ved endring av skjermstørrelse*/
@@ -990,7 +989,7 @@ padding-left: 15px;
 }
 
 
-/*-----Tabell med diverse informasjon slutt om studiet slutt-----*/
+/*-----Tabell med diverse informasjon om studiet slutt-----*/
 
 
 
@@ -1134,6 +1133,73 @@ padding-left: 15px;
 }
 
 /*-----Hovedtabell index slutt-----*/
+
+
+
+
+/*-----Tabell studiets oppbygging index start-----*/
+
+/* Her designes stilen til de grå boksene som angir hvilket studieår det gjelder: */
+.gråboks-angir-hvilket-år-container-studieplan-indexpage {
+    background-color: rgb(245, 245, 245);
+    padding-left: 10px;
+}
+.gråboks-angir-hvilket-år-container-studieplan-indexpage h2{
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.tabell-studieplan-indexpage {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tabell-studieplan-indexpage th{
+    background-color: rgb(255,204,0)
+} /* For å gjøre den øverste raden med overskriftene gul*/
+.tabell-studieplan-indexpage tr:nth-child(odd){
+    background-color: rgb(249, 247, 245); /* En veldig lys gråfarge som vil være på radene som er oddetall*/
+}
+
+
+.tabell-studieplan-indexpage a{
+    color: inherit; /* Får samme farge som forelder-elementet*/
+    text-decoration: none; /* Fjerner understrekingen*/
+}
+
+/* Her defineres stilen til lenkene når mus-pilen holdes over teksten: */
+.tabell-studieplan-indexpage a:hover{
+    text-decoration: underline; /* Legger til understreking*/
+    text-decoration-color: rgb(255,204,0);
+    text-decoration-thickness: 2px; /* Gjør understrekingen litt tykkere*/
+}
+
+.tabell-studieplan-indexpage th,
+.tabell-studieplan-indexpage td{
+    text-align: left; /* For at teksten i tabellen skal stå inntil venstre side*/
+    border-right: 3px solid rgb(255,255,255); /* For å legge til en hvit border mellom kolonnene*/
+}
+.tabell-studieplan-indexpage th.tbl-studieplan-indexpage-center-align,
+.tabell-studieplan-indexpage td.studiepoeng-studieplan-indexpage,
+.tabell-studieplan-indexpage td.status-studieplan-indexpage {
+    text-align: center; /* For at begge kolonnene med studiepoeng (SP) og status skal stå i midten og ikke til venstre som resten av tabellen*/
+}
+
+/*Disse setter spesifikk bredde på hver kolonne slik at alle tabellene ser like ut*/
+.tabell-studieplan-indexpage th:nth-child(1), .tabell-studieplan-indexpage td:nth-child(1){
+    width: 20%;
+}
+.tabell-studieplan-indexpage th:nth-child(2), .tabell-studieplan-indexpage td:nth-child(2){
+    width: 60%;
+}
+.tabell-studieplan-indexpage th:nth-child(3), .tabell-studieplan-indexpage td:nth-child(3){
+    width: 10%;
+}
+.tabell-studieplan-indexpage th:nth-child(4), .tabell-studieplan-indexpage td:nth-child(4){
+    width: 10%;
+}
+
+/*-----Tabell studiets oppbygging index slutt-----*/
 
 
 
