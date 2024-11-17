@@ -298,6 +298,16 @@ body{
 
 /* Start tabell studiets oppbygging indexpage*/
 
+/* Her designes stilen til de grå boksene som angir hvilket studieår det gjelder: */
+.gråboks-angir-hvilket-år-container-studieplan-indexpage {
+    background-color: rgb(245, 245, 245);
+    padding-left: 10px;
+}
+.gråboks-angir-hvilket-år-container-studieplan-indexpage h2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 
 
 .tabell-studieplan-indexpage {
