@@ -975,11 +975,6 @@ padding-left: 15px;
     padding-right: 0;
 }
 
-#box6-indexpage-tabelløverst {
-    height: 107px;
-}
-
-
 @media (max-width: 839px){
     .box-indexpage-tabelløverst {
         flex: 1 1 100%; /* En boks per rad */
