@@ -58,6 +58,11 @@ Inneholder
     box-sizing: border-box; /*Setter denne til standard for alle sidene, sørger for at innholdet holder seg innen for kanter*/
 }
 
+html, body {
+    overflow-x: hidden; /*Denne sørger for at det som kommer utenfor elementet skules og ikke gjør at man hvår hvit kantlinje*/
+}
+
+
 header {
     background-color: var(--siteblue);
     line-height: 0.5rem;
@@ -1439,6 +1444,7 @@ med info om programmer, og tabell for videre studiemuligheter slutt-----*/
 
 
 /* Her settes bakgrunnsfargen for hele footer-elementet: */
+
 .footer-indexpage {
     background-color: var(--oslometyellow);
 }
