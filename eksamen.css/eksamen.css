@@ -1612,6 +1612,7 @@ med info om programmer, og tabell for videre studiemuligheter slutt-----*/
 
     .box-2a-indexpage-footer{
         margin-left: 0;
+        margin-right: 3%;
     }
 
     .box-1a-indexpage-footer h2 {
@@ -1642,8 +1643,6 @@ med info om programmer, og tabell for videre studiemuligheter slutt-----*/
     }
 
     }
-
-/* *{box-sizing: border-box;} slettes dobbelt opp?*/
 
 /*----- Footer index slutt -----*/
 
