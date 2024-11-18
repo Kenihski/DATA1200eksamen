@@ -437,8 +437,8 @@ Inneholder
 }
 
 .flex-box-activity.accessibility img, .flex-box-activity.github img{
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding-left: 10%;
+    padding-right: 10%;
     padding-top: 10px;
     padding-bottom: 10px;
 }
