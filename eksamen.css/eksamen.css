@@ -1604,6 +1604,9 @@ med info om programmer, og tabell for videre studiemuligheter slutt-----*/
         margin-bottom: 30px; /* En liten avstand mellom alle boksene i kolonnen */
     }
 
+    .box-2a-indexpage-footer{
+        margin-left: 0;
+    }
 
     .box-1a-indexpage-footer h2 {
         font-size: 1.8rem; /* Ønskelig med større størrelse på overskriften*/
