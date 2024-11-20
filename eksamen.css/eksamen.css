@@ -1199,6 +1199,13 @@ med info om programmer, og tabell for videre studiemuligheter start-----*/
     color: var(--oslometblack);
 }
 
+/*Endrer underlinjen til sort farge ved hover*/
+.studiested-overskrift a:hover, .spørsmål-om-utdanningen-overskrift a:hover{
+    text-decoration-color: var(--oslometblack);
+    text-decoration-thickness: 2px;
+}
+
+
 .studiested-overskrift{
     margin-bottom: 30px;
 }
