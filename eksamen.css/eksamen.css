@@ -799,7 +799,7 @@ padding-left: 15px;
 /* Hovedsakelig for å justere bildene på index-page*/
 .oslomet-logo{
     display: flex;
-    background-image: url(../bilder/logo_of_oslo_metropolitan_university.svg);
+    background-image: url(../bilder/logooslomet.svg);
     background-size: cover;
     height: 36px;
     width: 61px;
@@ -1017,7 +1017,7 @@ padding-left: 15px;
     background-position: center;
     display: inline-block;
     margin-right: 10px;
-    background-image: url(../bilder/plus_symbol.svg.png.svg) 
+    background-image: url(../bilder/symbolplus.svg.png.svg) 
 }
 
 /*Gjør at de små tabellene i hva lærer du? får unike egenskaper i forhold til De store tabellene*/
@@ -1057,7 +1057,7 @@ padding-left: 15px;
 
 /*Bytter bakgrunnsbilde fra pluss til minus når man klikker/åpner boksen*/
 .gjemt-innhold:checked ~ .knapp-og-hovedtabell-overskrift-boks .knapp-box {
-    background-image: url(../bilder/minus_symbol.svg.png.svg);
+    background-image: url(../bilder/symbolminus.svg.png.svg);
 
 }
 
