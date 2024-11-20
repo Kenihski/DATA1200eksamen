@@ -21,6 +21,7 @@ Index page
 - Tabell studiets oppbygging index
 - Index Studiested, Spørsmål om utdanningen?, faglig leder, 
   tabell med info om programmer, og tabell for videre studiemuligheter
+- Footer index
 
 Innhold slutt --*/
 
@@ -163,8 +164,6 @@ text-decoration-thickness: 2px;
     #menu-github{
         background-color: var(--sitered); 
     }
-
-    /*herherher*/
 
     .menu-icon {
         display: block;
@@ -547,6 +546,7 @@ Inneholder
 
 /* ---hero index slutt--- */
 
+
 /* ---hovedoverskrift og tekst oppe index start--- */
 
 .flex-index-hovedoverskrift{
@@ -593,6 +593,7 @@ margin-right: 20%;
 }
 
 /* ---hovedoverskrift og tekst oppe index slutt--- */
+
 
 /* ---hovedinnhold, header og studieoversikt index start--- */
 
@@ -749,6 +750,7 @@ margin-right: 20%;
 }    
 
 /* ---hovedinnhold, header og studieoversikt index slutt--- */
+
 
 /* ---Studenthistorier index start---*/
 
@@ -1234,6 +1236,7 @@ med info om programmer, og tabell for videre studiemuligheter start-----*/
 }
 /*---Studiested slutt---*/
 
+
 /*---faglig leder start---*/
 .faglig-leder-container{
     display: flex;
@@ -1317,6 +1320,7 @@ med info om programmer, og tabell for videre studiemuligheter start-----*/
 }
 
 /*---faglig leder slutt---*/
+
 
 /*Sørger for at innholdet neders av hovedinnholdet blir liggende på et smalerer området enn det øvre innholdet. % ga en bedre flytt enn vw her*/
 .ulike-programmer, .flere-interesser,.faglig-leder-container,.faglig-leder-overskrift,.studiested-overskrift,.spørsmål-om-utdanningen-overskrift {
@@ -1438,10 +1442,7 @@ med info om programmer, og tabell for videre studiemuligheter slutt-----*/
 
 
 
-
-
 /*----- Footer index start -----*/
-
 
 /* Her settes bakgrunnsfargen for hele footer-elementet: */
 
