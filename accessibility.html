@@ -10,6 +10,8 @@
 
 
 <body>
+
+    <!--Danner menyen på toppen av siden-->
     <header class="accessibility-header">
         <nav>
             <input id="burger-toggle" type="checkbox">
@@ -27,14 +29,16 @@
 
  
 
-
+    <!--Hovedinnholdet er lagdt i flex-boxer som ble hovedsakelig laget for activity-page, med egne dobbel-klasser som lar oss justere de ytteligere i css-->
     <main class="main-activity accessibility">
-
         <div class="flex-container-activity accessibility">
+
+            <!--Denne flexboksen med tilhørende klasser er for overskrift-->
             <div class="flex-sub-container1-hero-activity accessibility">
                 <h1 class="overskrift-activity accessibility">Accessibility</h1>
             </div>
 
+            <!--En section for alt innholdet på denne siden, alle bilder på alle sider skal ha blitt lagret og referert til med små bokstaver-->
             <div class="flex-sub-container2-activity">
                 <article class="flex-venstre-column-activity">
                     <section class="flex-box-activity accessibility">
@@ -49,7 +53,7 @@
                             uten å hoppe over noen av nivåene. Dette er viktig for at skjermlesere skal kunne forstå 
                             innholdet og for at man naturlig kan hoppe ved behov.</p>
 
-                            <img src="./bilder/eksempel_overskrift.jpg" alt="kodeeksempel med endring for tilgjengelighet nr 1" width="100%">   
+                        <img src="./bilder/eksempel_overskrift.jpg" alt="kodeeksempel med endring for tilgjengelighet nr 1" width="100%">   
 
                         <p>Vi la til språk med lang-attributtene og tittel med tittel-elementet i HTML-dokumentet. 
                             Disse hjelper søkemotoren å bestemme språk og relevans, samt gjøre siden mer synlig og søkbar.</p>
@@ -62,7 +66,7 @@
                             ikke lastes inn, men også ved bruk av skjermleser hvor bilde blir «lest opp» for 
                             at bruker skal kunne forstå hva som står der.</p>
 
-                            <img src="./bilder/eksempel_alt.jpg" alt="kodeeksempel med endring for tilgjengelighet nr 2" width="100%">  
+                        <img src="./bilder/eksempel_alt.jpg" alt="kodeeksempel med endring for tilgjengelighet nr 2" width="100%">  
 
                         <p>Lenker ble markert med en underlinje der det er naturlig. Dette gjør det lettere å se lenken for svaksynte.</p>
 
@@ -74,7 +78,7 @@
                         <p>Tittel på lenker ble lagdt til (eksempel i bilde under). Dette er også nyttig for skjermlesere ved synshemning. Vi har derfor unngått å skrive «les mer» i tittelen, for at 
                             skjermleser ikke skal få mange av de på rad uten kontekst.</p>
 
-                            <img src="./bilder/eksempel_tittel.jpg" alt="kodeeksempel med endring for tilgjengelighet nr 3" width="100%">  
+                        <img src="./bilder/eksempel_tittel.jpg" alt="kodeeksempel med endring for tilgjengelighet nr 3" width="100%">  
 
                         <p>Vi benytte semantiske elementer fra html 5/css3 etter beste emne. For å unngå å bare bruke div. har vi inkludert semantiske elementer som main, article, section osv (eksempel i øverste bilde). Det gjør koden mer 
                             oppdatert og gir en bedre lesbarhet i selve koden, samtidig som det øker accessibility for skjermlesere.</p>

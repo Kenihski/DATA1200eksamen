@@ -10,10 +10,13 @@
 
 
 <body>
+
+    <!--Danner menyen på toppen av siden-->
     <header class="index-header">
+        <!--Egen boks for logo, bilde lagt til i css-->
         <div class="header-over">
             <div class="oslomet-logo-wrapper">
-                <div class="oslomet-logo"></div>
+                <div class="oslomet-logo"></div> 
             </div>
             <nav>
                 <input id="burger-toggle" type="checkbox">
@@ -29,6 +32,7 @@
             </nav>
         </div>    
         
+        <!--Danner boksen med lenke til studieoversikt, bilde med pil er lagdt inn med css-->
         <a href="https://www.oslomet.no/studier/studieoversikt" class="studieoversikt-lenke-wrapper"> 
             <div class="header-under">  
                 <div class="studieoversikt-lenke"><p><span class="pil-studieoversikt-lenke"></span><b>Studieoversikt</b></p>
@@ -38,20 +42,22 @@
     </header>
 
 
-
+    <!--Hovedinnholdet og rammeverket er lagd med flex-boxer, Alle bilder på alle sider skal ha blitt lagret og referert til med små bokstaver-->
     <main class="main-index">
-
         <div class="flex-container-index">
 
+            <!--Denne section med tilhørende klasser er for hero-video-->
             <section class="flex-sub-container1-hero-index">
                 <iframe class="video-index" title="Video om studieprogrammet ved OsloMet" src="https://film.oslomet.no/v.ihtml/player.html?source=embed&photo%5fid=95216483" frameborder="0" allowfullscreen></iframe>
             </section> <!--Video fra OsloMet sin nettside - kilde:https://film.oslomet.no/v.ihtml/player.html?source=embed&photo%5fid=95216483-->
 
+            <!--Denne section er for hovedoverskrift-->
             <section class="flex-index-hovedoverskrift">
                 <h1>Matematisk modellering og datavitenskap – ingeniør</h1>
                 <p>Bachelorprogram</p>
             </section>
 
+            <!--Denne section er for tabbelen øverst på siden med studieinformasjon, laget med flexboxer-->
             <section class="container-indexpage-tabelløverst">
                 <div class="box-indexpage-tabelløverst" id="box1-indexpage-tabelløverst">
                     <h2>Studiested</h2>
@@ -89,14 +95,18 @@
                 </div>
             </section>       
 
+            <!--Denne section er for en boks med beskrivende informasjon på toppen-->
             <section class="flex-index-teksts-oppe">
                 <p>Få innsikt i matematiske modeller og datadrevne metoder 
                     som kan løse mange praktiske og samfunnsnyttige oppgaver.</p>
             </section>
 
+            <!--Denne danne rammen for alt hovedinnholdet midt på siden-->
             <div class="flex-sub-container2-index">
                 <article class="flex-column-index">
                     <div class="flex-box-index">  
+
+                        <!--Rammen for de ytre tabellen med info om studiet med + og - buttons, hver boks med button i sin egen section-->
                         <div class="tabellramme-wrapper-index">   
                             
                             <section class="tabellramme-index">
@@ -209,7 +219,9 @@
                                     <p>Som illustrert av tabellene under har hvert fag sin unike emnekode, de er vektet med ulikt antall studiepoeng (SP) avhengig av 
                                         emnens størrelse, og noen av fagene er som indikert av status enten obligatoriske (O) eller valgemner (V).</p>
 
-
+                                    <!--Tabeller for studiets oppbyggin. De er laget med tabell-element som et forsøk på å få en ryddigere ordning enn orginalen -->
+                                    <!-- Derfor har vi redusert antall tabeller ved å samle alle fellesfag, obligatorisk fag og valgfag for hvert semester for hver retning-->
+                                    <!-- Tabellen er inspirert av NTNU sine tabeller om studiets oppbygging og har derfor 4 beskrivene kolonner, og at de ligger i en kolonne hele tiden-->
                                     <div class="gråboks-angir-hvilket-år-container-studieplan-indexpage">
                                         <h3>1. studieår</h3>
                                     </div>
@@ -977,21 +989,24 @@
                         </div> 
                     </div>
 
+                    <!--Denne section danner overskriften og lenken med studiested-->
                     <section class="studiested-overskrift">
                         <h2>Studiested</h2>
                         <p><a href="https://www.oslomet.no/om/studiested-pilestredet"><span class="pil-studiested-overskrift"></span><b>Studiested Pilestredet</b></a></p>
                     </section>
 
+                    <!--Denne section danner overskriften og lenken med Spørsmål om utdanningen-->
                     <section class="spørsmål-om-utdanningen-overskrift">
                         <h2>Spørsmål om utdanningen?</h2>
                         <p><a href="https://www.oslomet.no/kontaktskjema#Jeg%20vil%20bli%20student"><b>Har du spørsmål om utdanningen, kontakt oss gjennom vårt kontaktskjema.</b></a></p>
                     </section>
 
-
+                    <!--Denne section danner overskriften med faglig leder-->
                     <section class="faglig-leder-overskrift">
                         <h2>Faglig leder</h2>
                     </section>
 
+                    <!--Denne section danner lenken med faglig leder-->
                     <a href="https://www.oslomet.no/om/ansatt/krhel3944/" class="lenke-faglig-leder"> 
                         <section class="faglig-leder-container">
                             <div class="faglig-leder-bilde-og-info">
@@ -1011,11 +1026,12 @@
                         </section>
                     </a>
                     
-
+                    <!--Denne section danner overskriften du er kanskje også interessert i disse-->
                     <section class="flere-interesser">
                         <h2>Du er kanskje også interessert i disse?</h2>
                     </section>
 
+                    <!--Denne section danner innholdet i du er kanskje også interessert i disse med andre studieprogrammer-->
                     <section class="programmer-liste">
                         
                         <a href="https://www.oslomet.no/studier/tkd/anvendt-datateknologi" class="lenke-programmer"> 
@@ -1143,11 +1159,12 @@
 
                 </article>
                 
-
+                <!--Denne section danner overskriften studenthistorier-->
                 <section class="studenthistorier">
                     <h2>Studenthistorier</h2>
                 </section>
 
+                <!--Denne section danner boksen med bilde av to smilende personer-->
                 <a href="https://www.oslomet.no/studier/studenthistorier?student_story=147" class="lenke-boks-fibnil">
                 <section class="flex-container-index-bilde-nede">
                     <div class="flex-index-bilde-nede-innhold fibni1">
@@ -1162,6 +1179,7 @@
                 </section>
                 </a>
 
+                <!--Denne section danner lenken til flere studenthistorier-->
                 <a href="https://www.oslomet.no/studier/studenthistorier" class="lenke-boks-studenthistorier">
                     <section class="flex-studenthistorier">
                         <p><b>Flere studenthistorier</b></p>
@@ -1169,14 +1187,14 @@
                     </section>
                 </a>
                  
-            </div>          
+            </div>  
+                    
         </div>
-       
     </main>   
     
 
     
-    
+    <!--Denne danner footer-->
     <footer class="footer-indexpage">
 
         <div class="container-footer-indexpage">
