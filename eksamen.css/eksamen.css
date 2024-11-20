@@ -65,7 +65,7 @@ html, body {
 
 
 header {
-    background-color: var(--siteblue);
+    background-color: var(--siteblue); /*Denne er default*/
     line-height: 0.5rem;
     font-size: 1em;
     padding: 0.5rem;
@@ -73,21 +73,20 @@ header {
 }
 
 .index-header{
-    background-color: var(--oslometyellow);
+    background-color: var(--oslometyellow); /*Endrer default til spesifikk farge for side*/
 }
 
 .accessibility-header{
-    background-color: var(--sitegreen);
+    background-color: var(--sitegreen); /*Endrer default til spesifikk farge for side*/
 }
 
 .github-header{
-    background-color: var(--sitered);
+    background-color: var(--sitered); /*Endrer default til spesifikk farge for side*/
 }
 
 body {
     margin: 0;
     font-family: Helvetica, Arial, sans-serif;
-    box-sizing: border-box;
     font-size: 1rem;
 }
 
@@ -295,9 +294,9 @@ Inneholder
     justify-content: center;
 }
 
-/*slettes?*/
+
 .flex-høyre-column-activity.flex-box-activity {
-    flex: none; 
+    flex: none; /*forhindrer at boksene inni høyre-column vokser eller rkymper i forhold til andre flex-elementer*/
 }
 
 .footer-activity {
@@ -305,14 +304,6 @@ Inneholder
     padding: 1.5em;
 }
 
-
-/* slettes ? gjør ikke noe når den under står
-@media (max-width: 839px) {
-    .flex-container-activity {
-        padding: 5%;
-    }
-}
-*/
 
 /*For små skjermer/molbil - gjør at innholdet får mer plass og det blir mindre kanter, samt at hero tar mindre plass*/
 @media (max-width: 839px) {
@@ -395,20 +386,6 @@ Inneholder
     box-sizing: border-box;
     background-size: cover;
 }
-
-/*slettes?*/
-.hovedbilde-activity {
-    clear: both;
-    display: table;   
-}
-
-/*slettes?*/
-@media (max-width: 839px) {
-    .bilde-activity  {
-      width: 100%;
-    }
-}
-
 
 /*-----Bilder Activity slutt-----*/
 
@@ -661,6 +638,7 @@ margin-right: 20%;
     text-decoration-thickness: 2px;
 }
 
+/*Samtlige @media under brukes for å justere bredden på innholdet ved små og store skjermer*/
 
 /* Holder teksten på line med hovedinnhold ved endring av skjermstørrelse*/
 @media (max-width: 839px) {
