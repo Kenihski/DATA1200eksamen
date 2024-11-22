@@ -1,4 +1,4 @@
-/*----------- Hjemmeeksamen DATA 1200 høst 2024 ----------*/
+/*----------- Hjemmeeksamen DATA1200 høst 2024 ----------*/
 
 /*-- Innhold start
 
@@ -204,7 +204,6 @@ text-decoration-thickness: 2px;
     background-color: var(--sitered);
 }
 
-
 }
 
 /*-----Hamburgermenu slutt-----*/
@@ -244,6 +243,7 @@ Inneholder
     margin: 0 auto;
     flex: 1;
 }
+
 /*Bilde - kilde:https://www.shutterstock.com/nb/image-photo/young-expert-medical-technologist-working-by-1826811668 fotograf:shutterstock*/
 .flex-sub-container1-hero-activity{
     position: relative;
@@ -640,7 +640,7 @@ margin-right: 20%;
 
 /*Samtlige @media under brukes for å justere bredden på innholdet ved små og store skjermer*/
 
-/* Holder teksten på line med hovedinnhold ved endring av skjermstørrelse*/
+/* Holder teksten på linje med hovedinnhold ved endring av skjermstørrelse*/
 @media (max-width: 839px) {
     .header-under{
         padding-left: 2%;
@@ -778,14 +778,14 @@ padding-left: 15px;
     width: 12px;
     flex-shrink: 0; /*Denne hindrer pilen i å krympe*/
     margin-right: 15px;
-    transition: transform 0.2s ease; /*Sørger for at pilen flytter seg gjevnt og ikke med et "klikk"*/
+    transition: transform 0.2s ease; /*Sørger for at pilen flytter seg jevnt og ikke med et "klikk"*/
 }
 
 /*Flytter pil til høyre når man hovrer over hele boksen slik som på oslomet sin side*/
 .flex-studenthistorier:hover .pil-flex-studenthistorier{
     transform: translateX(5px); 
 }
-/*Gir boksen et mørt skjær ved hover*/
+/*Gir boksen et mørkt skjær ved hover*/
 .lenke-boks-studenthistorier:hover .flex-studenthistorier {
     background-color:  rgb(224, 195, 2);
 }
@@ -829,7 +829,7 @@ padding-left: 15px;
     }
 }
 
-/* Holder  logoen på line med hovedinnhold ved endring av skjermstørrelse*/
+/* Holder logoen på linje med hovedinnhold ved endring av skjermstørrelse*/
 @media (max-width: 839px) {
     .oslomet-logo-wrapper{
         padding-left: 2%;
@@ -870,7 +870,7 @@ padding-left: 15px;
 }
 
 .fibni1 {
-    order: 1; /*Gjør at boksen med tekst liger til venstre i row og legger seg under ved endre order ved kolonne*/
+    order: 1; /*Gjør at boksen med tekst ligger til venstre i row og legger seg under ved endre order ved kolonne*/
 }
 .fibni2{
     order: 2;  /*Gjør at boksen med bilde ligger til høyre ved row og legger seg på topp ved kolonne*/
@@ -989,7 +989,7 @@ padding-left: 15px;
     border-bottom: 1px solid var(--oslometgrey);
 }
 
-/*Gjør at de små tabellene i hva lærer du? får unike egenskaper i forhold til De store tabellene*/
+/*Gjør at de små tabellene i "hva lærer du?" får unike egenskaper i forhold til de store tabellene*/
 .tabellramme-index.tabellramme-index-liten-hva-lærer-du, .tabellramme-index.tabellramme-index-liten-studiets-oppbygging{
     border-top: none;
     padding: 0;
@@ -1242,7 +1242,7 @@ med info om programmer, og tabell for videre studiemuligheter start-----*/
 
 
 .faglig-leder-bilde {
-    flex: 0 0 80px; /*inkludert flekst grow, shrink og basis i en linje*/
+    flex: 0 0 80px; /*inkludert flex grow, shrink og basis i en linje*/
     margin: 15px;
     margin-left: 0;
     display: flex;
@@ -1291,7 +1291,7 @@ med info om programmer, og tabell for videre studiemuligheter start-----*/
     width: 12px;
     flex-shrink: 0; /*Denne hindrer pilen i å krympe*/
     margin-right: 15px;
-    transition: transform 0.2s ease; /*Sørger for at pilen flytter seg gjevnt og ikke med et "klikk"*/
+    transition: transform 0.2s ease; /*Sørger for at pilen flytter seg jevnt og ikke med et "klikk"*/
 }
 
 /*Flytter pil til høyre når man hovrer over hele boksen slik som på oslomet sin side*/
@@ -1307,7 +1307,7 @@ med info om programmer, og tabell for videre studiemuligheter start-----*/
 /*---faglig leder slutt---*/
 
 
-/*Sørger for at innholdet neders av hovedinnholdet blir liggende på et smalerer området enn det øvre innholdet. % ga en bedre flytt enn vw her*/
+/*Sørger for at innholdet nederst av hovedinnholdet blir liggende på et smalerer område enn det øvre innholdet. % ga en bedre flytt enn vw her*/
 .ulike-programmer, .flere-interesser,.faglig-leder-container,.faglig-leder-overskrift,.studiested-overskrift,.spørsmål-om-utdanningen-overskrift {
     margin-left: 15%;
     margin-right: 15%;
@@ -1396,7 +1396,7 @@ Dette gir en illusjon av at alle boksene har en linje øverst og nederst*/
 .ulike-programmer{
     display: flex;
     flex-direction: row;
-    justify-content: space-between; /*Fordeler innholdet gjevnt*/
+    justify-content: space-between; /*Fordeler innholdet jevnt*/
     align-items: center;
 }
 
@@ -1413,7 +1413,7 @@ Dette gir en illusjon av at alle boksene har en linje øverst og nederst*/
     width: 12px;
     margin-right: 15px;
     flex-shrink: 0; /*Denne hindrer pilen i å krympe*/
-    transition: transform 0.2s ease; /*Sørger for at pilen flytter seg gjevnt og ikke med et "klikk"*/
+    transition: transform 0.2s ease; /*Sørger for at pilen flytter seg jevnt og ikke med et "klikk"*/
 }
 
 /*Flytter pil til høyre når man hovrer over hele boksen slik som på oslomet sin side*/
@@ -1602,7 +1602,7 @@ med info om programmer, og tabell for videre studiemuligheter slutt-----*/
     }
 
     .box-1a-indexpage-footer h2 {
-        font-size: 1.8rem; /* Ønskelig med større størrelse på overskriften*/
+        font-size: 1.8rem; /* Øker tekststørrelsen litt ved små skjermer*/
         padding-left: 20px;
         margin-bottom: 20px;
         margin-top: 60px;
@@ -1621,7 +1621,7 @@ med info om programmer, og tabell for videre studiemuligheter slutt-----*/
     .box-3b-indexpage-footer a,
     .box-4b-indexpage-footer a,
     .box-5b-indexpage-footer a {
-        font-size: 1.1rem; /* Ønskelig med litt større tekst*/
+        font-size: 1.1rem; /* Øker tekststørrelsen litt ved små skjermer*/
     }
 
     .box-5b-indexpage-footer{

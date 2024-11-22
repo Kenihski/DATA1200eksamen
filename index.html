@@ -32,7 +32,7 @@
             </nav>
         </div>    
         
-        <!--Danner boksen med lenke til studieoversikt, bilde med pil er lagt inn med css-->
+        <!--Danner boksen med lenke til "studieoversikt", bilde med pil er lagt inn med css-->
         <a href="https://www.oslomet.no/studier/studieoversikt" class="studieoversikt-lenke-wrapper"> 
             <div class="header-under">  
                 <div class="studieoversikt-lenke"><p><span class="pil-studieoversikt-lenke"></span><b>Studieoversikt</b></p>
@@ -109,6 +109,7 @@
                         <!--Rammen for de ytre tabellen med info om studiet med + og - buttons, hver boks med button i sin egen section-->
                         <div class="tabellramme-wrapper-index">   
                             
+                            <!--"Opptakskrav og poeng" sin button-box ligger her-->
                             <section class="tabellramme-index">
                                 <input type="checkbox" id="knapp-hovedtabell1" class="gjemt-innhold">
                                 <label class="knapp-og-hovedtabell-overskrift-boks" for="knapp-hovedtabell1">
@@ -129,6 +130,7 @@
                                 </div>
                             </section>
 
+                            <!--"Slik søker du" sin button-box ligger her-->
                             <section class="tabellramme-index">
                                 <input type="checkbox" id="knapp-hovedtabell2" class="gjemt-innhold">
                                 <label class="knapp-og-hovedtabell-overskrift-boks" for="knapp-hovedtabell2">
@@ -145,6 +147,7 @@
                                 </div>
                             </section>
                             
+                            <!--"Hva lærer du?" sin button-box ligger her-->
                             <section class="tabellramme-index">
                                 <input type="checkbox" id="knapp-hovedtabell3" class="gjemt-innhold">
                                 <label class="knapp-og-hovedtabell-overskrift-boks" for="knapp-hovedtabell3">
@@ -159,7 +162,7 @@
                                     <p>Første året velger du hvilken av disse spesialiseringene du vil ta.</p>
                                 </div>
                                     
-                                
+                                <!--"Statistiske og datadrevne metoder" under "Hva lærer du?" sin button-box ligger her-->
                                 <section class="hovedinnhold-i-gjeminnhold hovedinnhold-i-gjeminnhold-hva-lærer-du-hovedramme-2">
 
                                     <section class="tabellramme-index tabellramme-index-liten-hva-lærer-du">
@@ -176,6 +179,7 @@
                                         </div>
                                     </section>
 
+                                    <!--"Vitenskapelige beregninger" under "Hva lærer du?" sin button-box ligger her-->
                                     <section class="tabellramme-index tabellramme-index-liten-hva-lærer-du">
                                         <input type="checkbox" id="knapp-hovedtabell11" class="gjemt-innhold">
                                         <label class="knapp-og-hovedtabell-overskrift-boks" for="knapp-hovedtabell11">
@@ -189,6 +193,7 @@
                                         </div>
                                     </section>
 
+                                    <!--"Matematikk og fysikk" under "Hva lærer du?" sin button-box ligger her-->
                                     <section class="tabellramme-index tabellramme-index-liten-hva-lærer-du">
                                         <input type="checkbox" id="knapp-hovedtabell12" class="gjemt-innhold">
                                         <label class="knapp-og-hovedtabell-overskrift-boks" for="knapp-hovedtabell12">
@@ -206,6 +211,7 @@
                                 </section>
                             </section>
                             
+                            <!--"Studiets oppbygging" sin button-box ligger her-->
                             <section class="tabellramme-index">
                                 <input type="checkbox" id="knapp-hovedtabell4" class="gjemt-innhold">
                                 <label class="knapp-og-hovedtabell-overskrift-boks" for="knapp-hovedtabell4">
@@ -219,9 +225,12 @@
                                     <p>Som illustrert av tabellene under har hvert fag sin unike emnekode, de er vektet med ulikt antall studiepoeng (SP) avhengig av 
                                         emnens størrelse, og noen av fagene er som indikert av status enten obligatoriske (O) eller valgemner (V).</p>
 
-                                    <!--Tabeller for studiets oppbyggin. De er laget med tabell-element som et forsøk på å få en ryddigere ordning enn orginalen -->
+                                    <!--Tabeller for studiets oppbygging. De er laget med tabell-element som et forsøk på å få en ryddigere ordning enn orginalen -->
                                     <!-- Derfor har vi redusert antall tabeller ved å samle alle fellesfag, obligatorisk fag og valgfag for hvert semester for hver retning-->
                                     <!-- Tabellen er inspirert av NTNU sine tabeller om studiets oppbygging og har derfor 4 beskrivene kolonner, og at de ligger i en kolonne hele tiden-->
+                                    
+                                    <!-- Først studieår er felles for alle retningene og har derfor en felles tabell. Deretter har vi delt opp slik
+                                     at hver linje får sine egne tabeller hvor både obligatoriske fag og valgfag er inkludert i samme tabell-->
                                     <div class="gråboks-angir-hvilket-år-container-studieplan-indexpage">
                                         <h3>1. studieår</h3>
                                     </div>
@@ -305,8 +314,10 @@
 
                                 </div>
 
+                                
                                 <section class="hovedinnhold-i-gjeminnhold hig-studiets-oppbygging2">
 
+                                    <!--"Statistiske og datadrevne metoder" under "Studiets oppbygging" sin button-box ligger her-->
                                     <section class="tabellramme-index tabellramme-index-liten-studiets-oppbygging">
                                         <input type="checkbox" id="knapp-hovedtabell13" class="gjemt-innhold">
                                         <label class="knapp-og-hovedtabell-overskrift-boks" for="knapp-hovedtabell13">
@@ -314,7 +325,10 @@
                                             <div class="hovedtabell-overskrift-box-index"><h3>Statistiske og datadrevne metoder</h3></div>
                                         </label>
                                         <div class="hovedinnhold-i-gjeminnhold studiets-oppbygging-gjeminnhold">
-
+                                            
+                                            <!--Tabeller for 2. og 3. studieår for "statistiske of datadrevne metoder" ligger her i egen button box,
+                                            slik at man kun trenger å se tabellene felles for første år samt retningsspesifikke tabeller uten alle de andre
+                                            tabellene -->
                                             <div class="gråboks-angir-hvilket-år-container-studieplan-indexpage">
                                                 <h3>2. studieår</h3>
                                             </div>
@@ -502,6 +516,7 @@
                                         </div>
                                     </section>
 
+                                    <!--"Vitenskapelige beregninger" under "Studiets oppbygging" sin button-box ligger her-->
                                     <section class="tabellramme-index tabellramme-index-liten-studiets-oppbygging">
                                         <input type="checkbox" id="knapp-hovedtabell14" class="gjemt-innhold">
                                         <label class="knapp-og-hovedtabell-overskrift-boks" for="knapp-hovedtabell14">
@@ -510,6 +525,9 @@
                                         </label>
                                         <div class="hovedinnhold-i-gjeminnhold studiets-oppbygging-gjeminnhold">
 
+                                            <!--Tabeller for 2. og 3. studieår for "vitenskapelige beregninger" ligger her i egen button box,
+                                            slik at man kun trenger å se tabellene felles for første år samt retningsspesifikke tabeller uten alle de andre
+                                            tabellene -->
                                             <div class="gråboks-angir-hvilket-år-container-studieplan-indexpage">
                                                 <h3>2. studieår</h3>
                                             </div>
@@ -698,6 +716,7 @@
                                         </div>
                                     </section>
 
+                                    <!--"Matematikk og fysikk" under "Studiets oppbygging" sin button-box ligger her-->
                                     <section class="tabellramme-index tabellramme-index-liten-studiets-oppbygging">
                                         <input type="checkbox" id="knapp-hovedtabell15" class="gjemt-innhold">
                                         <label class="knapp-og-hovedtabell-overskrift-boks" for="knapp-hovedtabell15">
@@ -706,6 +725,9 @@
                                         </label>
                                         <div class="hovedinnhold-i-gjeminnhold studiets-oppbygging-gjeminnhold">
                                             
+                                            <!--Tabeller for 2. og 3. studieår for "matematikk og fysikk" ligger her i egen button box,
+                                            slik at man kun trenger å se tabellene felles for første år samt retningsspesifikke tabeller uten alle de andre
+                                            tabellene -->
                                             <div class="gråboks-angir-hvilket-år-container-studieplan-indexpage">
                                                 <h3>2. studieår</h3>
                                             </div>
@@ -897,6 +919,7 @@
                                 </section>
                             </section>
 
+                            <!--"Hvordan foregår undervisningen?" sin button-box ligger her-->
                             <section class="tabellramme-index">
                                 <input type="checkbox" id="knapp-hovedtabell5" class="gjemt-innhold">
                                 <label class="knapp-og-hovedtabell-overskrift-boks" for="knapp-hovedtabell5">
@@ -920,6 +943,7 @@
                                 </div>
                             </section>
 
+                            <!--"Hva koster det?" sin button-box ligger her-->
                             <section class="tabellramme-index">
                                 <input type="checkbox" id="knapp-hovedtabell6" class="gjemt-innhold">
                                 <label class="knapp-og-hovedtabell-overskrift-boks" for="knapp-hovedtabell6">
@@ -934,7 +958,7 @@
                                 </div>
                             </section>
 
-
+                            <!--"Hva kan du jobbe som?" sin button-box ligger her-->
                             <section class="tabellramme-index">
                                 <input type="checkbox" id="knapp-hovedtabell7" class="gjemt-innhold">
                                 <label class="knapp-og-hovedtabell-overskrift-boks" for="knapp-hovedtabell7">
@@ -949,6 +973,7 @@
                                 </div>
                             </section>
 
+                            <!--"Utveksling" sin button-box ligger her-->
                             <section class="tabellramme-index">
                                 <input type="checkbox" id="knapp-hovedtabell8" class="gjemt-innhold">
                                 <label class="knapp-og-hovedtabell-overskrift-boks" for="knapp-hovedtabell8">
@@ -960,6 +985,7 @@
                                 </div>
                             </section>
 
+                            <!--"Videre studiemuligheter ved OsloMet" sin button-box ligger her-->
                             <section class="tabellramme-index tabellramme-index-videre-studiemuligheter">
                                 <input type="checkbox" id="knapp-hovedtabell9" class="gjemt-innhold">
                                 <label class="knapp-og-hovedtabell-overskrift-boks" for="knapp-hovedtabell9">
@@ -989,24 +1015,24 @@
                         </div> 
                     </div>
 
-                    <!--Denne section danner overskriften og lenken med studiested-->
+                    <!--Denne section danner overskriften og lenken med "studiested"-->
                     <section class="studiested-overskrift">
                         <h2>Studiested</h2>
                         <p><a href="https://www.oslomet.no/om/studiested-pilestredet"><span class="pil-studiested-overskrift"></span><b>Studiested Pilestredet</b></a></p>
                     </section>
 
-                    <!--Denne section danner overskriften og lenken med Spørsmål om utdanningen-->
+                    <!--Denne section danner overskriften og lenken med "Spørsmål om utdanningen"-->
                     <section class="spørsmål-om-utdanningen-overskrift">
                         <h2>Spørsmål om utdanningen?</h2>
                         <p><a href="https://www.oslomet.no/kontaktskjema#Jeg%20vil%20bli%20student"><b>Har du spørsmål om utdanningen, kontakt oss gjennom vårt kontaktskjema.</b></a></p>
                     </section>
 
-                    <!--Denne section danner overskriften med faglig leder-->
+                    <!--Denne section danner overskriften med "faglig leder"-->
                     <section class="faglig-leder-overskrift">
                         <h2>Faglig leder</h2>
                     </section>
 
-                    <!--Denne section danner lenken med faglig leder-->
+                    <!--Denne section danner lenken med "faglig leder"-->
                     <a href="https://www.oslomet.no/om/ansatt/krhel3944/" class="lenke-faglig-leder"> 
                         <section class="faglig-leder-container">
                             <div class="faglig-leder-bilde-og-info">
@@ -1026,12 +1052,12 @@
                         </section>
                     </a>
                     
-                    <!--Denne section danner overskriften du er kanskje også interessert i disse-->
+                    <!--Denne section danner overskriften "du er kanskje også interessert i disse"-->
                     <section class="flere-interesser">
                         <h2>Du er kanskje også interessert i disse?</h2>
                     </section>
 
-                    <!--Denne section danner innholdet i du er kanskje også interessert i disse med andre studieprogrammer-->
+                    <!--Denne section danner innholdet i "du er kanskje også interessert i disse" med andre studieprogrammer-->
                     <section class="programmer-liste">
                         
                         <a href="https://www.oslomet.no/studier/tkd/anvendt-datateknologi" class="lenke-programmer"> 
@@ -1159,7 +1185,7 @@
 
                 </article>
                 
-                <!--Denne section danner overskriften studenthistorier-->
+                <!--Denne section danner overskriften "studenthistorier"-->
                 <section class="studenthistorier">
                     <h2>Studenthistorier</h2>
                 </section>
@@ -1179,7 +1205,7 @@
                 </section>
                 </a>
 
-                <!--Denne section danner lenken til flere studenthistorier-->
+                <!--Denne section danner lenken til "flere studenthistorier"-->
                 <a href="https://www.oslomet.no/studier/studenthistorier" class="lenke-boks-studenthistorier">
                     <section class="flex-studenthistorier">
                         <p><b>Flere studenthistorier</b></p>
@@ -1194,7 +1220,7 @@
     
 
     
-    <!--Denne danner footer-->
+    <!--Denne danner footer i 5 deler. Hvor a er øverst med to bokser (1a og 2a) og b er nederst med tre bokser (3b,4b,5b)-->
     <footer class="footer-indexpage">
 
         <div class="container-footer-indexpage">
@@ -1259,6 +1285,4 @@
 
     </footer>
     
-
-
 </html>
