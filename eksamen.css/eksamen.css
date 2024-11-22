@@ -1,4 +1,5 @@
 /*------------ Hjemmeeksamen DATA1200 høst 2024 -----------*/
+/*------------ Kandidatnummer: 381 & 371 & 442 -----------*/
 
 
 /*-- Innhold start
@@ -419,6 +420,15 @@ Inneholder
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+/*Fjerner marginer ved små skjermer så bildene blir større/synes bedre ved at de tar opp hele bredden*/
+@media (max-width: 839px){
+    .flex-box-activity.accessibility img, .flex-box-activity.github img{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+    
 
 .flex-box-activity.github li{
     margin-left: 20px;
@@ -924,7 +934,7 @@ padding-left: 15px;
     word-break: keep-all;
 }
 
-/* GJør at boksene i tabellen tar opp mindre plass i høyden ved mobil/liten skjerm*/
+/* Gjør at boksene i tabellen tar opp mindre plass i høyden ved mobil/liten skjerm*/
 @media (max-width: 700px) {
     .box-indexpage-tabelløverst{
         padding-bottom: 0px;
